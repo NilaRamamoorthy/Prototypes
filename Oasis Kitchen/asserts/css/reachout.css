@@ -1,0 +1,11 @@
+h3 {
+    color: #0F5D4B;
+    text-align: center;
+}
+
+button {
+    background-color: #0F5D4B;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
