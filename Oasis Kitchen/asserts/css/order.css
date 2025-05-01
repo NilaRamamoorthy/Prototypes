@@ -1,0 +1,36 @@
+.popular {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .popular h3 {
+    color: red;
+    margin-bottom: 30px;
+  }
+
+  .cuisine-grid {
+    gap: 100px;
+    margin-left: 200px;
+    justify-items: center;
+  }
+
+  .cuisine-item img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .cuisine-item:hover {
+    transform: scale(1.2);
+  }
+
+  .cuisine-item p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: black;
+  }

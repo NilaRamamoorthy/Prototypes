@@ -1,0 +1,31 @@
+.filter-box {
+    background-color:#71a397;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .filter-title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+ 
+  .nav-pills .nav-link {
+    color: black;
+    background-color: transparent;
+    font-weight: normal;
+  }
+  .nav-pills .nav-link.active {
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+  }
+  .apply-btn {
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    float: right;
+    border: none;
+    border-radius: 10%;
+  }
+  hr {
+    border-top: 1px solid black;
+  }

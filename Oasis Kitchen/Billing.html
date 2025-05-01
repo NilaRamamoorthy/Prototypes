@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asserts/css/header.css">
+    <link rel="stylesheet" href="./asserts/css/billing.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <a href="">
+            <div class="logo">
+                <div class="logo-circle">OK</div>
+                <h1 id="logo-title">Oasis Kitchen</h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./order.html">Order</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex gap-3" id="icon">
+            <a href="./Cart.html"><img src="./asserts/Icons/shopping-cart icon.png"></a>
+            <a href="#"><img src="./asserts/Icons/heart icon.png"></a>
+            <a href="./Signup.html"><img src="./asserts/Icons/user icon.png"></a>
+        </div>
+    </nav>
+    <main>
+       
+            <form id="redirectForm">
+                <div class="d-flex flex-column flex-md-row gap-5 my-5 mx-5">
+                   
+                <div class="d-flex flex-column w-50 g-4 mx-5" id="left">
+                    <h2>Billing Details</h2>
+                    <br>
+
+                    <label>First Name*</label>
+                    <input type="name" class="form-control custom-input" required>
+                    <br><br>
+                    <label>Last Name*</label>
+                    <input type="name" class="form-control custom-input" required>
+                    <br><br>
+                    <label>Street Address*</label>
+                    <input type="name" class="form-control custom-input" required>
+                    <br><br>
+                    <label>Town/City</label>
+                    <input type="name" class="form-control custom-input" required>
+                    <br><br>
+                    <label>PhoneNo*</label>
+                    <input type="tel" class="form-control custom-input" required>
+                </div>
+        
+        <div class="form-container mx-5">
+<table class="text-light w-50 h-25 mx-5 p-4">
+    <tr>
+        <td>Total</td>
+        <td id="display">₹ 500</td>
+    </tr>
+</table>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="option" id="option1" value="payment.html" required>
+                <label class="form-check-label" for="option1">
+                    Bank <span><img src="./asserts/Icons/visa-icon.png" class="w-25 img-fluid"><img
+                            src="./asserts/Icons/mastercard-icon.png" class="w-25 img-fluid"></span>
+                </label>
+            </div>
+
+            <div class="form-check mb-4 ">
+                <input class="form-check-input" type="radio" name="option" id="option2" value="Ordered.html">
+                <label class="form-check-label mt-4 pt-2" for="option2">
+                    Cash on Delivery
+                </label>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-light text-dark">PAY NOW</button>
+            </div>
+        </div>
+   
+        </div>
+        
+    </form>
+    
+    </main>
+    <footer class=" py-4 footer-bottom">
+        <div class="container d-flex flex-row justify-content-between flex-wrap text-start">
+
+            <div class="me-4 mb-3">
+                <h4>Oasis Kitchen</h4>
+                <p>Subscribe</p>
+                <p>Get 10% off your first product</p>
+            </div>
+
+            <div class="me-4 mb-3">
+                <h4>Support</h4>
+                <p>11, Gandhi Nagar, Chennai.</p>
+                <p>exdaku@gmail.com</p>
+                <p>+123456789</p>
+            </div>
+
+            <div class="me-4 mb-3">
+                <h4>Blog</h4>
+                <p>Korean Kitchen</p>
+                <p>Successful Pizza</p>
+                <p>Festive Celebration</p>
+                <p>Memorable Dining</p>
+            </div>
+
+            <div class="me-4 mb-3">
+                <h4>Quick Link</h4>
+                <p>Terms of use</p>
+                <p>FAQ</p>
+                <p>Contact</p>
+            </div>
+
+        </div>
+
+        <div class="text-center m-4 footer-bottom d-flex justify-content-between">
+            <p>&copy; oasiskitchen.com</p>
+            <div>
+                <a href="./contact.html"><img src="./asserts/Icons/facebook icon.png"></a>
+                <a href="./contact.html"><img src="./asserts/Icons/instagram.png"></a>
+                <a href="./contact.html"><img src="./asserts/Icons/twitter icon.png"></a>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="./asserts/Javascript/billing.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

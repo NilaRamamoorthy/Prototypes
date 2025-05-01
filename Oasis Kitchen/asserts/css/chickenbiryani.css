@@ -1,0 +1,14 @@
+#rupee{
+    width: 20px;
+    height: 20px;
+}
+#rupees{
+    display: inline-flex;
+}
+#amount{
+    font-size: 25px;
+    margin-top:-4px;
+}
+h4{
+    font-size: 20px;
+}

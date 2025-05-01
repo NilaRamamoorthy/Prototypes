@@ -1,0 +1,28 @@
+body {
+    background-color: #fff;
+    font-family: 'Georgia', serif;
+  }
+  .form-control {
+    height: 60px;
+    font-size: 1.2rem;
+  }
+  .form-check-label {
+    font-size: 1.5rem;
+  }
+  .btn-custom {
+    background-color: #0a5740;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+  }
+  .btn-custom:hover {
+    background-color: #084431;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0a5740;
+    text-align: center;
+    margin-top: 30px;
+  }

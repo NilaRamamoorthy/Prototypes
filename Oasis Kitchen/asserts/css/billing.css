@@ -1,0 +1,27 @@
+input {
+    height: 50px;
+    border: none;
+}
+
+.custom-input {
+    background-color: rgba(117, 117, 117, 0.3);
+}
+
+#left {
+   
+    width: 38%;
+}
+.form-container {
+    background: #15444C;
+    color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-input {
+    margin-top: 40px;
+}
+table{
+font-size: 25px;
+}

@@ -1,0 +1,33 @@
+.contact-box {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 70%;
+    margin-left: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form {
+    border: 1px solid #000;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.form-control {
+    background-color: #ddd;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.btn-danger {
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.red-text {
+    color: red;
+    font-weight: bold;
+}
+
+#message {
+    color: #0F5D4B;
+}

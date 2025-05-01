@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./asserts/css/header.css">
+<link rel="stylesheet" href="./asserts/css/cart.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <a href="">
+            <div class="logo">
+                <div class="logo-circle">OK</div>
+                <h1 id="logo-title">Oasis Kitchen</h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./order.html">Order</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex gap-3" id="icon">
+            <a href="./Cart.html"><img src="./asserts/Icons/shopping-cart icon.png"></a>
+            <a href="#"><img src="./asserts/Icons/heart icon.png"></a>
+            <a href="./Signup.html"><img src="./asserts/Icons/user icon.png"></a>
+        </div>
+    </nav>
+    
+<div class="container my-5">
+  <h2 class="text-center mb-5">Shopping Cart</h2>
+  <div class="table-responsive mb-5">
+    <table class="table align-middle text-center">
+      <thead class="table-light">
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Remove</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <tr>
+          <td class="d-flex align-items-center">
+            <img src="./asserts/Cloud kitchen website images/biryani 1.png" alt="Product" class="me-2 rounded w-25">
+            <span>Chicken Biryani</span>
+          </td>
+          <td class="price">₹289</td>
+          <td>
+            <input type="number" class="form-control quantity mx-auto bg-light" value="1" min="1" style="width: 80px;" onchange="updateSubtotal(this)">
+          </td>
+          <td>
+            <button class="btn btn-sm" onclick="removeRow(this)"><img src="./asserts/Icons/trash icon.png"></button>
+          </td>
+          <td class="subtotal">₹289</td>
+        </tr>
+        <tr>
+          <td class="d-flex align-items-center">
+            <img src="./asserts/Cloud kitchen website images/Pizza 1.png" alt="Product" class="me-2 rounded w-25">
+            <span>Farmhouse Pizza</span>
+          </td>
+          <td class="price">₹150</td>
+          <td>
+            <input type="number" class="form-control quantity mx-auto bg-light" value="1" min="1" style="width: 80px;" onchange="updateSubtotal(this)">
+          </td>
+          <td>
+            <button class="btn btn-sm" onclick="removeRow(this)"><img src="./asserts/Icons/trash icon.png"></button>
+          </td>
+          <td class="subtotal">₹150</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<div class="d-flex justify-content-between">
+ 
+  <div class="mb-5 mx-auto">
+    <a href="./order.html" class="btn btn-outline-dark" onclick="save()">Return to shop</a>
+  </div>
+
+  <div class="card p-4 w-50">
+    <h4 class="mb-4">Cart Total</h4>
+    <div class="d-flex justify-content-between mb-2">
+      <span>Subtotal</span>
+      <span id="cart-subtotal">₹439</span>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between mb-2">
+      <span>Shipping</span>
+      <span>Free</span>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between mb-4">
+      <strong>Total</strong>
+      <strong id="cart-total">₹439</strong>
+    </div>
+    <a href="./Billing.html"><button class="btn btn-danger d-block w-50 mx-auto" onclick="save()">Proceed to checkout</button></a>
+  </div>
+</div>
+</div>
+
+
+
+<footer class=" py-4 footer-bottom">
+    <div class="container d-flex flex-row justify-content-between flex-wrap text-start">
+
+        <div class="me-4 mb-3">
+            <h4>Oasis Kitchen</h4>
+            <p>Subscribe</p>
+            <p>Get 10% off your first product</p>
+        </div>
+
+        <div class="me-4 mb-3">
+            <h4>Support</h4>
+            <p>11, Gandhi Nagar, Chennai.</p>
+            <p>exdaku@gmail.com</p>
+            <p>+123456789</p>
+        </div>
+
+        <div class="me-4 mb-3">
+            <h4>Blog</h4>
+            <p>Korean Kitchen</p>
+            <p>Successful Pizza</p>
+            <p>Festive Celebration</p>
+            <p>Memorable Dining</p>
+        </div>
+
+        <div class="me-4 mb-3">
+            <h4>Quick Link</h4>
+            <p>Terms of use</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+        </div>
+
+    </div>
+
+    <div class="text-center m-4 footer-bottom d-flex justify-content-between">
+        <p>&copy; oasiskitchen.com</p>
+        <div>
+          <a href="./contact.html"><img src="./asserts/Icons/facebook icon.png"></a>
+          <a href="./contact.html"><img src="./asserts/Icons/instagram.png"></a>
+          <a href="./contact.html"><img src="./asserts/Icons/twitter icon.png"></a>
+
+        </div>
+    </div>
+</footer>
+<script src="./asserts/Javascript/cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

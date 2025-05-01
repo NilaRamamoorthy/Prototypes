@@ -1,0 +1,21 @@
+.google-logo {
+    width: 40px;
+    vertical-align: middle;
+  }
+  .input-box {
+    height: 60px;
+    font-size: 1.25rem;
+  }
+  .continue-btn {
+    background-color: #4B00EB;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .continue-btn:hover {
+    background-color: #3600b6;
+  }
+
+  

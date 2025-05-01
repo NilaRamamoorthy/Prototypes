@@ -1,0 +1,33 @@
+main {
+    text-align: center;
+}
+
+#one {
+    color: #09C61F;
+}
+
+#two {
+    color: #D40B0B;
+}
+
+a {
+    color: #4E0BD4;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slide-in {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

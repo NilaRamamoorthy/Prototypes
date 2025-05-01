@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asserts/css/header.css">
+    <link rel="stylesheet" href="./asserts/css/contact.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <a href="">
+            <div class="logo">
+                <div class="logo-circle">OK</div>
+                <h1 id="logo-title">>Oasis Kitchen</h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./order.html">Order</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex gap-3" id="icon">
+            <a href="./Cart.html"><img src="./asserts/Icons/shopping-cart icon.png"></a>
+            <a href="#"><img src="./asserts/Icons/heart icon.png"></a>
+            <a href="./Signup.html"><img src="./asserts/Icons/user icon.png"></a>
+        </div>
+    </nav>
+   
+<div class="container my-5">
+    <h2>Contact</h2>
+    
+    <div class="row mt-4">
+   
+      <div class="col-md-4">
+        <div class="contact-box">
+          <h4 class="red-text">Call to us</h4>
+          <p>We are available 24/7,<br>7 days a week<br>Phone: +987654321</p>
+  
+          <h4 class="red-text mt-4">Write to us</h4>
+          <p>Fill out our form we will contact you within 24 hours<br>Email: oasis@gmail.com</p>
+        </div>
+      </div>
+  
+  
+      <div class="col-md-8">
+        <form id="contactForm">
+          <div class="contact-form">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="phone" class="form-control" placeholder="Your Phone" required>
+              </div>
+            </div>
+            <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+  
+          <div class="mt-4 d-flex justify-content-end">
+            <button type="submit" class="btn btn-danger">Send Message</button>
+          </div>
+        </form>
+    </div>
+        <div id="successMsg" class="text-center">
+            <h2 class="text-center" style="color: #0F5D4B;">Message Sent Successfully!!!</h2>
+        </div>
+    </div>
+</div>
+    <footer class=" py-4 footer-bottom">
+        <div class="container d-flex flex-row justify-content-between flex-wrap text-start">
+
+            <div class="me-4 mb-3">
+                <h4>Oasis Kitchen</h4>
+                <p>Subscribe</p>
+                <p>Get 10% off your first product</p>
+            </div>
+
+            <div class="me-4 mb-3">
+                <h4>Support</h4>
+                <p>11, Gandhi Nagar, Chennai.</p>
+                <p>exdaku@gmail.com</p>
+                <p>+123456789</p>
+            </div>
+
+            <div class="me-4 mb-3">
+                <h4>Blog</h4>
+                <p>Korean Kitchen</p>
+                <p>Successful Pizza</p>
+                <p>Festive Celebration</p>
+                <p>Memorable Dining</p>
+            </div>
+
+            <div class="me-4 mb-3">
+                <h4>Quick Link</h4>
+                <p>Terms of use</p>
+                <p>FAQ</p>
+                <p>Contact</p>
+            </div>
+
+        </div>
+
+        <div class="text-center m-4 footer-bottom d-flex justify-content-between">
+            <p>&copy; oasiskitchen.com</p>
+            <div>
+                <a href="./contact.html"><img src="./asserts/Icons/facebook icon.png"></a>
+                <a href="./contact.html"><img src="./asserts/Icons/instagram.png"></a>
+                <a href="./contact.html"><img src="./asserts/Icons/twitter icon.png"></a>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./asserts/Javascript/contact.js"></script>
+
+</body>
+
+</html>

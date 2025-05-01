@@ -1,0 +1,22 @@
+.email-input {
+    background-color: #EFBCBC;
+    border: 2px solid #D40B0B;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .submit-btn {
+      float: left;
+    background-color: #D40B0B;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    border-radius: 10px;
+  }
+
+  .submit-btn:hover {
+    background-color: #960A0A;
+  }

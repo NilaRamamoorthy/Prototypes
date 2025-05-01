@@ -1,0 +1,36 @@
+#ideas {
+    margin: 100px;
+    margin-left: 12%;
+    gap: 40px;
+}
+
+.idea {
+    width: 40%;
+}
+
+h3 {
+    color: #EB1D1D;
+}
+
+h2 {
+    color: #0F5D4B;
+}
+
+p {
+    font-size: 20px;
+}
+
+.start {
+    margin: 30px;
+    margin-left: 12%;
+}
+
+#start-btn {
+    background-color: #0F5D4B;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+}
+a:link{
+    text-decoration: none;
+}

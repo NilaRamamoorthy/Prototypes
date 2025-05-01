@@ -1,0 +1,33 @@
+#blog {
+    color: #0F5D4B;
+}
+
+.blogs {
+    margin: 3%;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    margin-bottom: 10%;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: #4E0BD4;
+    font-size: 20px;
+    padding: 3px;
+}
+
+#read {
+    color: #441BE7;
+    cursor: pointer;
+}
+
+p {
+    font-size: 12px;
+    padding: 5px;
+}
