@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StyleCo Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asserts/css/header.css">
+    <style>
+        .form-check input[type="checkbox"]:checked {
+            background-color: #071937;
+            border-color: #071937;
+        }
+
+        .new-price,
+        .card-title {
+            color: #071937
+        }
+
+        .dropdown-item:hover {
+            text-decoration: underline;
+        }
+
+        .card-img-top {
+            cursor: pointer;
+        }
+
+        .card {
+            border: none;
+        }
+
+        button {
+            background-color: #071937;
+            color: white;
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            height: 40px;
+        }
+
+        .page {
+            width: 30px;
+            height: 30px;
+            border-radius: 7px;
+            background-color: #071937;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center py-2 fw-bold" id="saleHeader">Sale : upto 70% off*</div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3 py-2">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="./Home.html">StyleCo.</a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Search Bar -->
+
+                <form class="mx-auto d-none d-lg-block w-50 search-bar ">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search..." aria-label="Search">
+                        <span class="input-group-text"><img src="./asserts/icons/search icon.png" width="15px"></span>
+                    </div>
+                </form>
+
+                <!-- Icons and Links -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-3 position-relative">
+                        <a class="nav-link" href="./cart.html"><i class="bi bi-cart" style="font-size: 1.2rem;"></i>
+                            <span class="badge rounded-pill">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="./wishlist.html"><i class="bi bi-heart"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                    <div class="navbar-divider d-none d-lg-block"></div>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="./login.html"><i class="bi bi-person"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Nav -->
+    <nav class="navbar navbar-expand navbar-light bg-light px-3">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto d-flex gap-3">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark " href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <!-- Text that navigates to the category page -->
+                    <a class="nav-link fw-bold text-dark border-bottom border-dark"
+                        href="./catagory.html">Categories</a>
+
+                    <!-- Arrow icon that triggers the dropdown -->
+                    <a class="nav-link p-0 text-dark" href="#" id="categoriesDropdownToggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="categoriesDropdownIcon" class="bi bi-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" href="./newborns.html">Baby Clothes</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./boys.html">Boys</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./girls.html">Girls</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./men.html">Men</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./women.html">Women</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./girls.html">Sunny Wear</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./men.html">Winter Wear</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark" href="./sale1.html">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark" href="./aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-5 fw-bold text-dark">
+        <div class="d-flex gap-3 py-4 flex-wrap">
+            <p class="fw-bold">Home</p>
+            <i class="bi bi-chevron-right"></i>
+            <p class="fw-bold">Catagories</p>
+            <i class="bi bi-chevron-right"></i>
+            <p class="fw-bold">Girls</p>
+        </div>
+        <h3 class="text-center fw-bold mb-4">Girls</h3>
+        <div class="container-fluid mb-5 pb-1 mx-3">
+            <div class="row">
+                <!-- FILTER SECTION -->
+                <div class="col-md-2 ps-4">
+                    <h5 class="fw-bold fs-4 mb-3">Size</h5>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5 " type="checkbox" value="" id="option1">
+                        <label class="form-check-label fs-5" for="option1">
+                            XS
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option2">
+                        <label class="form-check-label fs-5" for="option2">
+                            S
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option3">
+                        <label class="form-check-label fs-5" for="option3">
+                            M
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option4">
+                        <label class="form-check-label fs-5" for="option4">
+                            L
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            XL
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            XXL
+                        </label>
+                    </div>
+                    <br>
+                    <h5 class="fw-bold fs-4 m-3">Brands</h5>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5 " type="checkbox" value="" id="option1">
+                        <label class="form-check-label fs-5" for="option1">
+                            Anouk
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option2">
+                        <label class="form-check-label fs-5" for="option2">
+                            Adidas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option3">
+                        <label class="form-check-label fs-5" for="option3">
+                            D&G
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option4">
+                        <label class="form-check-label fs-5" for="option4">
+                            Levi's
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Fendi
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Gucci
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            H&M
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Snoozip
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" style="accent-color: #071937;"
+                            id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Valentino
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-between mb-4">
+                        <div>Showing 1-10 of 10 products</div>
+                        <div>
+
+
+
+                            <li class="nav-item dropdown d-flex align-items-center" id="sortDropdown">
+                                Sort By: <span id="sortOption" class="sort-option"></span>
+
+                                <a class="nav-link p-0 text-dark" href="#" id="sortDropdownToggle" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i id="sortDropdownIcon" class="bi bi-chevron-down dropdown-icon"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" id="dropdownMenu">
+                                    <li class="dropdown-item">Featured</li>
+                                    <li class="dropdown-item">Best Selling</li>
+                                    <li class="dropdown-item">Alphabetically, A-Z</li>
+                                    <li class="dropdown-item">Alphabetically, Z-A</li>
+                                    <li class="dropdown-item">Price, low to high</li>
+                                    <li class="dropdown-item">Price, high to low</li>
+                                </ul>
+                            </li>
+
+
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-4 g-5">
+
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 1.png"
+                                        class="card-img-top" alt="girls1"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 2.png"
+                                        class="card-img-top" alt="girls2"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 3.png"
+                                        class="card-img-top" alt="girls3"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 4.png"
+                                        class="card-img-top" alt="girls4"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 5.png"
+                                        class="card-img-top" alt="girls5"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 6.png"
+                                        class="card-img-top" alt="girls6"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 7.png"
+                                        class="card-img-top" alt="girls7"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 8.png"
+                                        class="card-img-top" alt="girls8"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 9.png"
+                                        class="card-img-top" alt="girls9"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./girldetails.html"><img src="./asserts/images/girls 10.png"
+                                        class="card-img-top" alt="girls10"></a>
+                                <div class="card-body">
+                                    <p class="card-text fw-normal">Girl kid baggy jean</p>
+                                    <h5 class="card-title fw-bold fs-5">PEPPY JEAN</h5>
+                                    <p class="mb-0">
+                                        <span class="text-muted text-decoration-line-through me-2">₹499</span>
+                                        <span class="new-price fw-bold fs-5">₹299</span>
+                                    </p>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page text-center mx-auto mb-5">1</div>
+    </main>
+    <footer id="footer">
+        <div class="d-flex flex-wrap gap-5 mx-3 p-4 my-3">
+            <div class="d-flex flex-column gap-2" id="navigate">
+                <h5 class="text-light border-bottom border-light w-50">NAVIGATE</h5>
+                <a href="./rrr.html" class="footer-link text-light">Replacements, Returns & Refunds</a>
+                <a href="./news.html" class="footer-link text-light">News & Promotions</a>
+                <a href="./aboutus.html" class="footer-link text-light">About Us</a>
+                <a href="./terms.html" class="footer-link text-light">Terms of Service</a>
+                <a href="./privacypolicy.html" class="footer-link text-light">Privacy Policy</a>
+                <a href="./howtoorder.html" class="footer-link text-light">How to order</a>
+
+            </div>
+            <!-- IN-STORE SHOPPING -->
+            <div class="col-md-4 mb-4 text-light">
+                <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">
+                    <i class="bi bi-shop me-2"></i>In-Store Shopping
+                </h6>
+                <p class="mb-0">House of StyleCo.<br>South Fairlands,<br>Salem - 636 302</p>
+            </div>
+
+            <!-- COMPANY INFO -->
+            <div class="col-md-4 mb-4 text-light">
+                <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">StyleCo.</h6>
+                <p class="mb-1">Reg: S1203014054</p>
+                <p class="mb-1">TIN: 10920IGST1204</p>
+                <p class="mb-1">Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+        </div>
+        <!-- SOCIAL ICONS -->
+        <div class="text-center mb-3">
+            <img src="./asserts/icons/social media icons.png">
+        </div>
+
+        <div class=" text-dark py-3 mt-3 text-center fw-bold" id="copyright">
+            <span>StyleCo. <i class="bi bi-c-circle"></i> 2022</span>
+        </div>
+    </footer>
+    <script src="./asserts/js/header.js"></script>
+    <!-- JavaScript to handle dropdown logic -->
+    <script>
+        const sortOptionSpan = document.getElementById('sortOption');
+        const sortDropdownIcon = document.getElementById('sortDropdownIcon');
+        const sortDropdownToggle = document.getElementById('sortDropdownToggle');
+        const sortItems = document.querySelectorAll('#dropdownMenu .dropdown-item');
+
+        // Toggle arrow direction when dropdown is clicked
+        sortDropdownToggle.addEventListener('click', () => {
+            setTimeout(() => {
+                const isExpanded = sortDropdownToggle.getAttribute('aria-expanded') === 'true';
+                sortDropdownIcon.classList.toggle('bi-chevron-up', isExpanded);
+                sortDropdownIcon.classList.toggle('bi-chevron-down', !isExpanded);
+            }, 10);
+        });
+
+        // When a dropdown item is clicked
+        sortItems.forEach(item => {
+            item.addEventListener('click', () => {
+                sortOptionSpan.textContent = item.textContent;
+                sortDropdownIcon.classList.remove('bi-chevron-up');
+                sortDropdownIcon.classList.add('bi-chevron-down');
+            });
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

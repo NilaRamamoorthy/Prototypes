@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StyleCo Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asserts/css/header.css">
+    <style>
+        #bag {
+            margin-left: 33%;
+        }
+
+        .btn-pay:hover {
+            background-color: #03153B !important;
+            color: white !important;
+            box-shadow: none !important;
+            transform: none !important;
+        }
+
+        .card-input:valid {
+            background-color: #d2fbe0;
+        }
+
+        #search:valid {
+            background-color: white;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .payment-option img {
+            width: 60px;
+            height: auto;
+        }
+
+        .form-check-input:checked {
+            background-color: #03153B;
+            border-color: #03153B;
+        }
+
+        .summary-card {
+            background-color: #f1f7fd;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .btn-pay {
+            background-color: #03153B;
+            color: white;
+            font-weight: bold;
+            border-radius: 12px;
+            width: 100%;
+        }
+
+        .form-check-input:checked {
+            background-color: #03153B;
+            border-color: #03153B;
+        }
+
+        .payment-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .payment-option img {
+            height: 30px;
+        }
+
+        .credit-card-section {
+            display: none;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .form-control:valid {
+            background-color: #d2fbe0;
+        }
+
+        .input-group-text {
+            background-color: white;
+            border-left: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center py-2 fw-bold" id="saleHeader">Sale : upto 70% off*</div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3 py-2">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="./Home.html">StyleCo.</a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Search Bar -->
+
+                <form class="mx-auto d-none d-lg-block w-50 search-bar ">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search..." aria-label="Search"
+                            id="search">
+                        <span class="input-group-text"><img src="./asserts/icons/search icon.png" width="15px"></span>
+                    </div>
+                </form>
+
+                <!-- Icons and Links -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-3 position-relative">
+                        <a class="nav-link" href="./cart.html"><i class="bi bi-cart" style="font-size: 1.2rem;"></i>
+                            <span class="badge rounded-pill">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="./wishlist.html"><i class="bi bi-heart"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                    <div class="navbar-divider d-none d-lg-block"></div>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="./login.html"><i class="bi bi-person"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Nav -->
+    <nav class="navbar navbar-expand navbar-light bg-light px-3">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto d-flex gap-3">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark" href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <!-- Text that navigates to the category page -->
+                    <a class="nav-link fw-bold text-dark " href="./catagory.html">Categories</a>
+
+                    <!-- Arrow icon that triggers the dropdown -->
+                    <a class="nav-link p-0 text-dark" href="#" id="categoriesDropdownToggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="categoriesDropdownIcon" class="bi bi-chevron-down dropdown-icon"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" href="./newborns.html">Baby Clothes</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./boys.html">Boys</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./girls.html">Girls</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./men.html">Men</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./women.html">Women</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./girls.html">Sunny Wear</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./men.html">Winter Wear</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark" href="./sale1.html">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark" href="./aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mx-auto px-5 fs-5 mb-5 pb-5">
+        <div class="d-flex gap-3 pt-4">
+            <p class="fw-bold">Home</p>
+            <i class="bi bi-chevron-right"></i>
+            <p class="fw-bold">My Cart</p>
+        </div>
+
+        <div class="d-flex gap-3" id="bag">
+            <p class="">Bag</p>
+            <i class="bi bi-chevron-right fw-bold"></i>
+            <p class="">Address</p>
+            <i class="bi bi-chevron-right"></i>
+            <p class="fw-bold">Payment</p>
+        </div>
+
+        <div class="container py-5">
+            <div class="row">
+                <!-- Payment Methods -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-4">Choose your payment method</h5>
+                    <form>
+                        <div class="payment-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment" id="phonepe" value="phonepe"
+                                    checked>
+                                <label class="form-check-label ms-2" for="phonepe">PhonePe</label>
+                            </div>
+                            <img src="./asserts/icons/phonepe.png" alt="PhonePe" />
+                        </div>
+                        <div class="payment-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment" id="gpay" value="gpay">
+                                <label class="form-check-label ms-2" for="gpay">Google Pay</label>
+                            </div>
+                            <img src="asserts/icons/gpay.png" alt="Google Pay" />
+                        </div>
+                        <div class="payment-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal">
+                                <label class="form-check-label ms-2" for="paypal">PayPal</label>
+                            </div>
+                            <img src="./asserts/icons/paypal.png" alt="PayPal" />
+                        </div>
+                        <div class="payment-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment" id="creditcard"
+                                    value="creditcard">
+                                <label class="form-check-label ms-2" for="creditcard">Credit Card</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="./asserts/icons/master card.png" alt="MasterCard" style="width: 40px;" />
+                                <img src="./asserts/icons/visa.png" alt="Visa" style="width: 40px;" />
+                            </div>
+                        </div>
+                        <!-- Credit Card Section -->
+                        <div id="creditCardSection" class="credit-card-section">
+                            <p class="mb-3">Save money transfer using bank account<br><small class="text-muted">Visa,
+                                    Mastero</small></p>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">CREDIT CARD NUMBER</label>
+                                <input type="text" class="form-control" value="" placeholder="**** **** **** ****"
+                                    required />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">CVV CODE</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="" placeholder="***" required />
+                                        <span class="input-group-text"><i class="bi bi-credit-card"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">EXPIRY DATE</label>
+                                    <input type="text" class="form-control" value="" placeholder="MM/YY" required />
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">NAME ON CARD</label>
+                                <input type="text" class="form-control" value=""
+                                    placeholder="Enter your name on the card" required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Summary Section -->
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">Subtotal</span>
+                            <span>₹ 4580</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">Delivery Charges</span>
+                            <span>₹ 0</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">Discount</span>
+                            <span>- ₹ 220</span>
+                        </div>
+                        <hr />
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="fw-bold">TOTAL</span>
+                            <span class="fw-bold">₹ 4360</span>
+                        </div>
+                        <a href="./success.html"><button class="btn btn-pay">PROCEED TO PAY</button></a>
+                    </div>
+                    <div class="fs-6 ps-5 ms-5 d-flex mt-2">
+                        <img src="./asserts/icons/Lock.png" width="20" height="20" class="mt-2">
+                        <p class="mt-2 ps-1">100% Secure Payments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="d-flex flex-wrap gap-5 mx-3 p-4 my-3">
+            <div class="d-flex flex-column gap-2" id="navigate">
+                <h5 class="text-light border-bottom border-light w-50">NAVIGATE</h5>
+                <a href="./rrr.html" class="footer-link text-light">Replacements, Returns & Refunds</a>
+                <a href="./news.html" class="footer-link text-light">News & Promotions</a>
+                <a href="./aboutus.html" class="footer-link text-light">About Us</a>
+                <a href="./terms.html" class="footer-link text-light">Terms of Service</a>
+                <a href="./privacypolicy.html" class="footer-link text-light">Privacy Policy</a>
+                <a href="./howtoorder.html" class="footer-link text-light">How to order</a>
+
+            </div>
+            <!-- IN-STORE SHOPPING -->
+            <div class="col-md-4 mb-4 text-light">
+                <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">
+                    <i class="bi bi-shop me-2"></i>In-Store Shopping
+                </h6>
+                <p class="mb-0">House of StyleCo.<br>South Fairlands,<br>Salem - 636 302</p>
+            </div>
+
+            <!-- COMPANY INFO -->
+            <div class="col-md-4 mb-4 text-light">
+                <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">StyleCo.</h6>
+                <p class="mb-1">Reg: S1203014054</p>
+                <p class="mb-1">TIN: 10920IGST1204</p>
+                <p class="mb-1">Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+        </div>
+        <!-- SOCIAL ICONS -->
+        <div class="text-center mb-3">
+            <!-- <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a> -->
+            <img src="./asserts/icons/social media icons.png">
+        </div>
+
+        <div class=" text-dark py-3 mt-3 text-center fw-bold" id="copyright">
+            <span>StyleCo. <i class="bi bi-c-circle"></i> 2022</span>
+        </div>
+    </footer>
+    <script src="./asserts/js/header.js"></script>
+    <!-- JavaScript to toggle credit card section -->
+    <script>
+        const radios = document.querySelectorAll('input[name="payment"]');
+        const creditCardSection = document.getElementById('creditCardSection');
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', function () {
+                if (this.value === 'creditcard') {
+                    creditCardSection.style.display = 'block';
+                } else {
+                    creditCardSection.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

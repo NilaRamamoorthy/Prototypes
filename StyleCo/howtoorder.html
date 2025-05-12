@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>StyleCo Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./asserts/css/header.css">
+
+</head>
+
+<body>
+  <div class="text-center py-2 fw-bold" id="saleHeader">Sale : upto 70% off*</div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-3 py-2">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="./Home.html">StyleCo.</a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Search Bar -->
+
+        <form class="mx-auto d-none d-lg-block w-50 search-bar ">
+          <div class="input-group">
+            <input type="text" class="form-control " placeholder="Search..." aria-label="Search">
+            <span class="input-group-text"><img src="./asserts/icons/search icon.png" width="15px"></span>
+          </div>
+        </form>
+
+        <!-- Icons and Links -->
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item me-3 position-relative">
+            <a class="nav-link" href="./cart.html"><i class="bi bi-cart" style="font-size: 1.2rem;"></i>
+              <span class="badge rounded-pill">0</span>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="./wishlist.html"><i class="bi bi-heart" style="font-size: 1.2rem;"></i></a>
+          </li>
+          <div class="navbar-divider d-none d-lg-block"></div>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="./login.html"><i class="bi bi-person" style="font-size: 1.2rem;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secondary Nav -->
+  <nav class="navbar navbar-expand navbar-light bg-light px-3">
+    <div class="container-fluid">
+      <ul class="navbar-nav mx-auto d-flex gap-3">
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-dark border-bottom border-dark" href="./Home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown d-flex align-items-center">
+          <!-- Text that navigates to the category page -->
+          <a class="nav-link fw-bold text-dark " href="./catagory.html">Categories</a>
+
+          <!-- Arrow icon that triggers the dropdown -->
+          <a class="nav-link p-0 text-dark" href="#" id="categoriesDropdownToggle" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i id="categoriesDropdownIcon" class="bi bi-chevron-down dropdown-icon"></i>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item fw-bold" href="./newborns.html">Baby Clothes</a></li>
+            <li><a class="dropdown-item fw-bold" href="./boys.html">Boys</a></li>
+            <li><a class="dropdown-item fw-bold" href="./girls.html">Girls</a></li>
+            <li><a class="dropdown-item fw-bold" href="./men.html">Men</a></li>
+            <li><a class="dropdown-item fw-bold" href="./women.html">Women</a></li>
+            <li><a class="dropdown-item fw-bold" href="./girls.html">Sunny Wear</a></li>
+            <li><a class="dropdown-item fw-bold" href="./men.html">Winter Wear</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-dark" href="./sale1.html">Sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-dark" href="./aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container mx-auto px-5 fs-5 mb-5 pb-5">
+    <div class="d-flex gap-3 py-4">
+      <p class="fw-bold">Home</p>
+      <i class="bi bi-chevron-right"></i>
+      <p class="fw-bold">How To Order</p>
+    </div>
+    <p>How to order:Browse through the category menu or type in the search box and then choose the product that you
+      want, add to cart, check the quality needed, enter your mail address and the payment method that will be used.
+      Once Sonee Sports receives the payment, we will process the order</p>
+    <p>Verification: Please keep your digital receipts after any transactions because we might need it for order
+      verification purposes.</p>
+    <p>Order Status: Once the order has been successfully processed: we start packing the order and shipping it to the
+      courier within 24 hours. If 24 hours have passed, please wait for the delivery of the items and they will be
+      processed as replacements. You will receive a tracking note if the order is by Post/Air Cargo.</p>
+      <p>Changing an order: If there is a need to change the size of an item that has already been paid for, please call us immediately since we normally process orders within 24 hours of the order and can change it for you before it ends. If you wish to change the item after receiving it, please contact us @3335995</p>
+      <p>Problems with order received: If there any issues on the received items, please inform us through our contact platforms(social media accounts, website or telephone @ 3335996).</p>
+      <p>Shipping and Delivery:<br>Delivery: We provide shipping delivery within Maldives through Maldives post or Maldivian Air Cargo</p>
+<p>Delivery lead time: The website receives orders 24/7 but our office pick up has a cut off time of 5:00PM from sunday through Thursday. All orders placed before the cut off time will be processed from the office on the same day. For orders placed beyond the cut off time (Sunday to Thursday), processing and pickup will be on the next business day.<br>Orders placed on Fridays and public holidays will be processed and pickedup on the following business day.</p>
+<p>Please note that we aim to deliver within the time agreed upon at purchase. Howerve, we do not guarantee that all orders will be delivered within the presented time frame. Sonee Sports and delivery partners may follow national and declared holidays; these no-operation days may also affect the processing and shipping of your packages.</p>
+<p>Delivery Scheduling: Maldives Post Limited's delivery time frame is within five business days from Sonee Sports to the customer.</p>
+<p>Location/Coverage area: We deliver items within Maldives through Maldives Cargo Services.</p>
+<p>Payments:</p>
+<p>Payment Methods: For transactions online, we accept credit or debit cards. For card payments you will be redirected to the Bank of Maldives Payment Gateway. You will be redirected back toour website once the payment is processed. In-store, we accept cash, credit and debit card as well</p>  
+</main>
+  <footer id="footer">
+    <div class="d-flex flex-wrap gap-5 mx-3 p-4 my-3">
+      <div class="d-flex flex-column gap-2" id="navigate">
+        <h5 class="text-light border-bottom border-light w-50">NAVIGATE</h5>
+        <a href="./rrr.html" class="footer-link text-light">Replacements, Returns & Refunds</a>
+        <a href="./news.html" class="footer-link text-light">News & Promotions</a>
+        <a href="./aboutus.html" class="footer-link text-light">About Us</a>
+        <a href="./terms.html" class="footer-link text-light">Terms of Service</a>
+        <a href="./privacypolicy.html" class="footer-link text-light">Privacy Policy</a>
+        <a href="./howtoorder.html" class="footer-link text-light">How to order</a>
+
+      </div>
+      <!-- IN-STORE SHOPPING -->
+      <div class="col-md-4 mb-4 text-light">
+        <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">
+          <i class="bi bi-shop me-2"></i>In-Store Shopping
+        </h6>
+        <p class="mb-0">House of StyleCo.<br>South Fairlands,<br>Salem - 636 302</p>
+      </div>
+
+      <!-- COMPANY INFO -->
+      <div class="col-md-4 mb-4 text-light">
+        <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">StyleCo.</h6>
+        <p class="mb-1">Reg: S1203014054</p>
+        <p class="mb-1">TIN: 10920IGST1204</p>
+        <p class="mb-1">Phone: +91 90121 90121</p>
+        <p>Email: styleco@gmail.com</p>
+      </div>
+    </div>
+    <!-- SOCIAL ICONS -->
+    <div class="text-center mb-3">
+      <!-- <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a> -->
+      <img src="./asserts/icons/social media icons.png">
+    </div>
+
+    <div class=" text-dark py-3 mt-3 text-center fw-bold" id="copyright">
+      <span>StyleCo. <i class="bi bi-c-circle"></i> 2022</span>
+    </div>
+  </footer>
+  <script src="./asserts/js/header.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

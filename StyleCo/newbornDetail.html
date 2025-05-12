@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StyleCo Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asserts/css/header.css">
+    <style>
+        .wishlist-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .wishlist-heart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: black;
+
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .wishlist-heart.active {
+            color: red;
+
+        }
+
+        #main-img {
+            position: relative;
+            z-index: -1;
+        }
+
+        button {
+            width: 200px;
+        }
+
+        .count {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+
+        #operator {
+            cursor: pointer;
+        }
+
+        #details {
+            margin-left: 40%;
+        }
+
+        #all-detail {
+            width: 70vw;
+            margin-left: 10%;
+        }
+
+        #description {
+            display: none;
+        }
+
+        #shipItem {
+            cursor: pointer;
+            border-bottom: 2px solid black;
+        }
+
+        #desItem {
+            cursor: pointer;
+        }
+
+        #shipping {
+            display: block;
+        }
+
+        .dropdown-toggle::after {
+            display: none !important;
+        }
+
+        #size {
+            margin-left: -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center py-2 fw-bold" id="saleHeader">Sale : upto 70% off*</div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3 py-2">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="./Home.html">StyleCo.</a>
+
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Search Bar -->
+
+                <form class="mx-auto d-none d-lg-block w-50 search-bar ">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search..." aria-label="Search">
+                        <span class="input-group-text"><img src="./asserts/icons/search icon.png" width="15px"></span>
+                    </div>
+                </form>
+
+                <!-- Icons and Links -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-3 position-relative">
+                        <a class="nav-link" href="./cart.html"><i class="bi bi-cart" style="font-size: 1.2rem;"></i>
+                            <span class="badge rounded-pill">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="./wishlist.html"><i class="bi bi-heart"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                    <div class="navbar-divider d-none d-lg-block"></div>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="./login.html"><i class="bi bi-person"
+                                style="font-size: 1.2rem;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Nav -->
+    <nav class="navbar navbar-expand navbar-light bg-light px-3">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto d-flex gap-3">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark " href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <!-- Text that navigates to the category page -->
+                    <a class="nav-link fw-bold text-dark border-bottom border-dark"
+                        href="./catagory.html">Categories</a>
+
+                    <!-- Arrow icon that triggers the dropdown -->
+                    <a class="nav-link p-0 text-dark" href="#" id="categoriesDropdownToggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="categoriesDropdownIcon" class="bi bi-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" href="./newborns.html">Baby Clothes</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./boys.html">Boys</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./girls.html">Girls</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./men.html">Men</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./women.html">Women</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./girls.html">Sunny Wear</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./men.html">Winter Wear</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark" href="./sale1.html">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-dark" href="./aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="mx-4">
+        <div class="d-flex gap-3 py-4 ps-4 ms-2 flex-wrap">
+            <p class="fw-bold fs-4">Home</p>
+            <i class="bi bi-chevron-right fs-4"></i>
+            <p class="fw-bold fs-4">Catagories</p>
+            <i class="bi bi-chevron-right fs-4"></i>
+            <p class="fw-bold fs-4">New Born</p>
+            <i class="bi bi-chevron-right fs-4"></i>
+            <p class="fw-bold fs-4">Blooming Jean Onesie</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Product Image Display -->
+                <div class="col-md-6 text-center">
+
+                    <div class="wishlist-container">
+                        <i class="bi bi-heart wishlist-heart" onclick="toggleHeart(this)"></i>
+                        <img src="./asserts/images/new born one product image 1.png"
+                            class="wishlist-image mb-4 img-fluid" id="main-img" width="450" alt="Product">
+                    </div>
+                    <!-- Thumbnail Images -->
+                    <div class="d-flex justify-content-center gap-3">
+                        <img src="./asserts/images/new born one product image 1.png" class="thumbnail-img w-25 h-25"
+                            onclick="changeImage(this)">
+                        <img src="./asserts/images/new born one product image 2.png" class="thumbnail-img w-25 h-25"
+                            onclick="changeImage(this)">
+                        <img src="./asserts/images/new born one product image 3.png" class="thumbnail-img w-25 h-25"
+                            onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <!-- Product Info (Optional) -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold fs-4">New Born</h2>
+                    <hr>
+                    <p>Blooming Jean Onesie</p>
+                    <p class="fw-bold">SNOOZIP</p>
+                    <p class="fw-bold">₹900</p>
+                    <p>TAX INCLUDED | SHIPPING CALCULATED AT CHECKOUT</p>
+                    <div class="container mb-3" id="size">
+                        <label class="form-label fw-bold fs-6">Size: <span id="labelSize">XS</span></label>
+
+                        <div class="dropdown">
+                            <button
+                                class="btn border-dark dropdown-toggle d-flex align-items-center justify-content-between w-50"
+                                type="button" id="sizeDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="selectedSize">XS</span>
+                                <i id="arrowIcon" class="bi bi-chevron-down ms-2"></i>
+                            </button>
+
+
+                            <ul class="dropdown-menu w-50" aria-labelledby="sizeDropdownBtn">
+                                <li class="dropdown-item">XS</li>
+                                <li class="dropdown-item">S</li>
+                                <li class="dropdown-item">M</li>
+                                <li class="dropdown-item">L</li>
+                                <li class="dropdown-item">XL</li>
+                                <li class="dropdown-item">XXL</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <p id="operator" onclick="minus()">-</p>
+                        <div class="count text-center" id="count">1</div>
+                        <p id="operator" onclick="plus()">+</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="./cart.html"> <button class="btn text-light" style="background-color: #071937;">Add to
+                                Cart</button></a>
+                        <a href="./cart.html"> <button class="btn border-dark rounded">Buy Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5" id="all-detail">
+            <div class="d-flex gap-3" id="details">
+                <span class="" id="desItem" onclick="des()">DESCRIPTION</span>
+                <span class=" " onclick="ship()" id="shipItem">SHIPPING & RETURN</span>
+            </div>
+            <hr>
+            <div class="" id="description">
+                <p>Paperbag jeans<br>REF.87001063<br>Denim style cotton fabric. Straight design. Elastic paperbag
+                    waistband. Jeans with tie closure.The ecru colour has a total look.<br>Composition: 100%
+                    cotton<br>Designed in Barcelona<br>Machine washing max 30&deg;C /85&deg;F short spn dry. Do not
+                    bleach.Ironing max 110&deg;C / 230&deg;F. Do not dry clean.Do not tumble dry.<br>Item no.115096</p>
+
+            </div>
+            <div class="" id="shipping">
+                <p>Delivery & Shipping:</p>
+
+                <p>We offer delivery within Male' and Hulhumale' for orders over MVR 300. Delivery is made within 24
+                    hours of purchase, Monday to Thursday, between 11am and 10pm. For orders under MVR 300, there is a
+                    flat delivery fee of MVR 20. Delivery is made within 24 hours of purchase, Monday to Thursday,
+                    between 11am and 10pm.WE do not deliver on Friday or public holidays.<br>Express Delivery:<br>We
+                    offer express delivery service within Male' for orders above MVR 1000.<br> A delivery fee of MVR 100
+                    applies</p>
+            </div>
+        </div>
+        <h3 class="fw-bold pt-5">RECOMENDED PRODUCTS</h3><br><br>
+        <div class="container d-flex flex-wrap gap-2">
+
+            <div>
+                <a href="./mendetails.html"> <img src="./asserts/images/reg winter 1.png" width="250"></a>
+                <div class="d-flex justify-content-between ">
+                    <h5 class="fw-bold fs-5">Roy</h5>
+                    <p class="fw-bold fs-5">₹850</p>
+                </div>
+                <p class="fw-normal">Leather leggings</p>
+            </div>
+            <div>
+                <a href="./mendetails.html"> <img src="./asserts/images/reg winter 2.png" width="250"></a>
+                <div class="d-flex justify-content-between ">
+                    <h5 class="fw-bold fs-5">Alder Fleece</h5>
+                    <p class="fw-bold fs-5">₹900</p>
+                </div>
+                <p class="fw-normal">Lined Coords</p>
+            </div>
+            <div>
+                <a href="./womendetails.html"><img src="./asserts/images/reg winter 3.png" width="250"></a>
+                <div class="d-flex justify-content-between ">
+                    <h5 class="fw-bold fs-5">Nova Elegent</h5>
+                    <p class="fw-bold fs-5">₹1200</p>
+                </div>
+                <p class="fw-normal">Pleated blazer dress</p>
+            </div>
+            <div>
+                <a href="./womendetails.html"> <img src="./asserts/images/reg winter 4.png" width="250"></a>
+                <div class="d-flex justify-content-between ">
+                    <h5 class="fw-bold fs-5">Emy Luxe</h5>
+                    <p class="fw-bold fs-5">₹740</p>
+                </div>
+                <p class="fw-normal">Soft knit Sweater</p>
+            </div>
+
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div class="d-flex flex-wrap gap-5 mx-3 p-4 my-3">
+            <div class="d-flex flex-column gap-2" id="navigate">
+                <h5 class="text-light border-bottom border-light w-50">NAVIGATE</h5>
+                <a href="./rrr.html" class="footer-link text-light">Replacements, Returns & Refunds</a>
+                <a href="./news.html" class="footer-link text-light">News & Promotions</a>
+                <a href="./aboutus.html" class="footer-link text-light">About Us</a>
+                <a href="./terms.html" class="footer-link text-light">Terms of Service</a>
+                <a href="./privacypolicy.html" class="footer-link text-light">Privacy Policy</a>
+                <a href="./howtoorder.html" class="footer-link text-light">How to order</a>
+
+            </div>
+            <!-- IN-STORE SHOPPING -->
+            <div class="col-md-4 mb-4 text-light">
+                <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">
+                    <i class="bi bi-shop me-2"></i>In-Store Shopping
+                </h6>
+                <p class="mb-0">House of StyleCo.<br>South Fairlands,<br>Salem - 636 302</p>
+            </div>
+
+            <!-- COMPANY INFO -->
+            <div class="col-md-4 mb-4 text-light">
+                <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">StyleCo.</h6>
+                <p class="mb-1">Reg: S1203014054</p>
+                <p class="mb-1">TIN: 10920IGST1204</p>
+                <p class="mb-1">Phone: +91 90121 90121</p>
+                <p>Email: styleco@gmail.com</p>
+            </div>
+        </div>
+        <!-- SOCIAL ICONS -->
+        <div class="text-center mb-3">
+            <img src="./asserts/icons/social media icons.png">
+        </div>
+
+        <div class=" text-dark py-3 mt-3 text-center fw-bold" id="copyright">
+            <span>StyleCo. <i class="bi bi-c-circle"></i> 2022</span>
+        </div>
+    </footer>
+    <script src="./asserts/js/header.js"></script>
+    <script src="./asserts/js/details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

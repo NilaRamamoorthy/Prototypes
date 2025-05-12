@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>StyleCo Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./asserts/css/header.css">
+  <style>
+    #reg-header {
+
+      margin-left: 10%;
+    }
+
+    #explore {
+      background-color: #F1F6FC;
+    }
+
+    .grey {
+      color: gray;
+    }
+
+    .btn-explore {
+      height: 50px;
+      width: 250px;
+      margin-top: 20px;
+      margin-left: 100px;
+      border-radius: 30px;
+
+    }
+
+    #span {
+      margin-left: 60px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    #brand {
+      gap: 80px;
+      margin: 50px;
+      margin-left: 10%;
+    }
+
+    #buttons {
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+
+
+    }
+
+
+    #buttons button {
+      background-color: #f0f0f0;
+      border: 1px solid black;
+      border-radius: 30px;
+      width: 110px;
+      height: 40px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #buttons button.active {
+      background-color: #071937;
+      color: white;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    #arrivals {
+      background-color: #071937;
+      /* height: 40vh; */
+    }
+
+    #explore-btn {
+      height: 35px;
+      border: none;
+      border-radius: 30px;
+
+    }
+
+    #readmore {
+      background-color: #071937;
+      border-radius: 30px;
+      color: white;
+      padding: 10px;
+      width: 150px;
+      cursor: pointer;
+    }
+
+    #subscribe-img {
+      width: 97vw;
+    }
+
+    .relative-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .email-form {
+      position: absolute;
+      left: 33%;
+      top: 67%;
+      background-color: black;
+      border-radius: 50px;
+      padding: 10px 20px;
+      display: flex;
+      width: 34%;
+      color: white;
+
+    }
+
+    .email-form input {
+      border: none;
+      background: transparent;
+      color: white;
+      flex-grow: 1;
+      /* outline: none; */
+    }
+
+    .email-form .bi {
+      font-size: 1.3rem;
+      color: white;
+    }
+
+     .grid {
+      display: grid;
+       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 3fr 2fr;
+      gap: 10px;
+      width: 20vw;
+      max-width: 800px;
+      aspect-ratio: 1 / 1;
+    }
+   
+
+    .cell {
+      background-color: #333;
+      position: relative;
+    }
+
+    .cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .cell img.active {
+      opacity: 1;
+    }
+    @media (max-width:674px){
+.email-form{
+  margin-top: -40px;
+  margin-left: -60px;
+}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text-center py-2 fw-bold" id="saleHeader">Sale : upto 70% off*</div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-3 py-2">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="./Home.html">StyleCo.</a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Search Bar -->
+
+        <form class="mx-auto d-none d-lg-block w-50 search-bar " action="./catagory.html">
+          <div class="input-group">
+            <input type="text" class="form-control " placeholder="Search..." aria-label="Search">
+            <span class="input-group-text"><img src="./asserts/icons/search icon.png" width="15px"></span>
+          </div>
+        </form>
+
+        <!-- Icons and Links -->
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item me-3 position-relative">
+            <a class="nav-link" href="./cart.html"><i class="bi bi-cart" style="font-size: 1.2rem;"></i>
+              <span class="badge rounded-pill">0</span>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="./wishlist.html"><i class="bi bi-heart" style="font-size: 1.2rem;"></i></a>
+          </li>
+          <div class="navbar-divider d-none d-lg-block"></div>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="./login.html"><i class="bi bi-person" style="font-size: 1.2rem;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secondary Nav -->
+  <nav class="navbar navbar-expand navbar-light bg-light px-3">
+    <div class="container-fluid">
+      <ul class="navbar-nav mx-auto d-flex gap-3">
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-dark border-bottom border-dark" href="./Home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown d-flex align-items-center">
+          <!-- Text that navigates to the category page -->
+          <a class="nav-link fw-bold text-dark " href="./catagory.html">Categories</a>
+
+          <!-- Arrow icon that triggers the dropdown -->
+          <a class="nav-link p-0 text-dark" href="#" id="categoriesDropdownToggle" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i id="categoriesDropdownIcon" class="bi bi-chevron-down dropdown-icon"></i>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item fw-bold" href="./newborns.html">Baby Clothes</a></li>
+            <li><a class="dropdown-item fw-bold" href="./boys.html">Boys</a></li>
+            <li><a class="dropdown-item fw-bold" href="./girls.html">Girls</a></li>
+            <li><a class="dropdown-item fw-bold" href="./men.html">Men</a></li>
+            <li><a class="dropdown-item fw-bold" href="./women.html">Women</a></li>
+            <li><a class="dropdown-item fw-bold" href="./girls.html">Sunny Wear</a></li>
+            <li><a class="dropdown-item fw-bold" href="./men.html">Winter Wear</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-dark" href="./sale1.html">Sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-dark" href="./aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container-fluid py-4">
+    <h3 class="fw-bold fs-3 mb-5">REFLECT YOUR STYLE</h3>
+    <div clas="d-flex flex-md-nowrap flex-wrap" id="reg-header">
+      <img src="./asserts/images/register header image 1.png" class="img-fluid w-sm-25 " alt="reg-img-1" width="500">
+      <img src="./asserts/images/reg-header image 2.png" alt="reg-img2" height="340">
+      <img src="./asserts/images/reg-header image 3.png" alt="reg-img3" height="340">
+    </div>
+    <div class="d-flex flex-wrap" id="brand">
+      <img src="./asserts/images/levis.png" alt="levis" width="80" height="70">
+      <img src="./asserts/images/valentina logo.png" alt="valentino" width="80" height="70">
+      <img src="./asserts/images/ralph logo.png" alt="ralph" width="80" height="70">
+      <img src="./asserts/images/gucci logo.png" alt="gucci" width="80" height="70">
+      <img src="./asserts/images/fendi logo.png" alt="fendi" width="80" height="70">
+      <img src="./asserts/images/adidas logo.png" alt="adidas" width="80" height="70">
+      <img src="./asserts/images/d&g logo.png" alt="D&G" width="80" height="50" class="mt-2">
+    </div>
+    <div class="d-flex flex-column flex-md-row" id="explore">
+      <img src="./asserts/images/reg-image 4.png" width="410" height="380" alt="reg-img4" class="ms-5 ps-5">
+      <p class="fs-4 fw-bold p-4"><span class="grey">EXPLORE TODAY'S<br> FASHION THAT MIRRORS
+          <br>YOUR<br></span>PERSONALITY,<br> ELEVATING YOUR<br> CONFIDENCE, EMBRACE <br>STYLES, & <br>INDIVIDUALITY.
+      </p>
+      <div class="d-flex flex-column gap-5 ms-2 ps-5">
+        <button class="btn-explore float-right fw-bold fs-5">Explore Now <span class=" bg-dark text-light" id="span"><i
+              class="bi bi-arrow-right"></i></span></button>
+        <img src="./asserts/images/reg explore image 4th frame 1.png" width="350" height="250">
+      </div>
+    </div>
+    <div class="container">
+      <h3 class="fw-bold fs-2 my-5">Our Collection</h3>
+      <p class="fs-5">Step into the world of StyleCo., where each collection tells its own story. From minimalist<br>
+        essectials to bold statement pieces, our curated collections are designed to suit every<br> occasion and style
+      </p>
+      <div class="d-flex flex-wrap justify-content-between">
+        <div id="buttons" class="flex-wrap">
+          <button id="kurtas" onclick="showCategory('kurtas')">Kurtas</button>
+          <button id="winterwear" onclick="showCategory('winterwear')">Winter Wear</button>
+          <button id="dresses" onclick="showCategory('dresses')">Dresses</button>
+          <button id="baby" onclick="showCategory('baby')">Baby Onesies</button>
+          <button id="skirt" onclick="showCategory('skirt')">Skirt</button>
+          <button id="t-shirt" onclick="showCategory('t-shirt')">T-Shirt</button>
+
+        </div>
+        <a href="./men.html"><button class="btn fw-bold border-none mt-4 pt-2">See All</button></a>
+      </div>
+      <div id="kurtas-4" class="container my-5 product-container">
+
+        <div>
+          <a href=""> <img src="./asserts/images/reg kurta 1.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">LIBAS</h5>
+            <p class="fw-bold fs-5">₹550</p>
+          </div>
+          <p class="fw-normal">Mustard Solid Kurta</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg kurta 2.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">W for Women</h5>
+            <p class="fw-bold fs-5">₹1100</p>
+          </div>
+          <p class="fw-normal">Red Printed Cotton</p>
+        </div>
+        <div>
+          <a href=""></a><img src="./asserts/images/reg kurta  3.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Anouk</h5>
+            <p class="fw-bold fs-5">₹800</p>
+          </div>
+          <p class="fw-normal">Lime Yolk Design</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg kurta 4.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Dressberry</h5>
+            <p class="fw-bold fs-5">₹780</p>
+          </div>
+          <p class="fw-normal">Blue Embroidered</p>
+        </div>
+
+      </div>
+      <div id="winterwear-4" class="container my-5 product-container">
+
+        <div>
+          <a href=""> <img src="./asserts/images/reg winter 1.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Roy</h5>
+            <p class="fw-bold fs-5">₹850</p>
+          </div>
+          <p class="fw-normal">Leather leggings</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg winter 2.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Alder Fleece</h5>
+            <p class="fw-bold fs-5">₹900</p>
+          </div>
+          <p class="fw-normal">Lined Coords</p>
+        </div>
+        <div>
+          <a href=""></a><img src="./asserts/images/reg winter 3.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Nova Elegent</h5>
+            <p class="fw-bold fs-5">₹1200</p>
+          </div>
+          <p class="fw-normal">Pleated blazer dress</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg winter 4.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Emy Luxe</h5>
+            <p class="fw-bold fs-5">₹740</p>
+          </div>
+          <p class="fw-normal">Soft knit Sweater</p>
+        </div>
+
+      </div>
+      <div id="dresses-4" class="container my-5 product-container">
+
+        <div>
+          <a href=""> <img src="./asserts/images/reg dresses 1.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Petal & Pup</h5>
+            <p class="fw-bold fs-5">₹520</p>
+          </div>
+          <p class="fw-normal">Pleated Maxi Dress</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg dresses 2.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Vince Camuto</h5>
+            <p class="fw-bold fs-5">₹700</p>
+          </div>
+          <p class="fw-normal">Tiered Midi Dress</p>
+        </div>
+        <div>
+          <a href=""></a><img src="./asserts/images/reg dresses 3.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">AST Label</h5>
+            <p class="fw-bold fs-5">₹1000</p>
+          </div>
+          <p class="fw-normal">Floral Midi Sundress</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg dresses 4.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Nordstrom</h5>
+            <p class="fw-bold fs-5">₹850</p>
+          </div>
+          <p class="fw-normal">Line Dress</p>
+        </div>
+
+      </div>
+      <div id="baby-4" class="container my-5 product-container">
+
+        <div>
+          <a href=""> <img src="./asserts/images/reg baby 1.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">SnooZip</h5>
+            <p class="fw-bold fs-5">₹874</p>
+          </div>
+          <p class="fw-normal">Pleated Maxi Dress</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg baby 2.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Milk & Baby</h5>
+            <p class="fw-bold fs-5">₹540</p>
+          </div>
+          <p class="fw-normal">Tiered Midi Dress</p>
+        </div>
+        <div>
+          <a href=""></a><img src="./asserts/images/reg baby 3.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Mothercare India</h5>
+            <p class="fw-bold fs-5">₹940</p>
+          </div>
+          <p class="fw-normal">Floral Midi Sundress</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg winter 4.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">H&M</h5>
+            <p class="fw-bold fs-5">₹1400</p>
+          </div>
+          <p class="fw-normal">Line Dress</p>
+        </div>
+
+      </div>
+      <div id="skirt-4" class="container my-5 product-container">
+
+        <div>
+          <a href=""> <img src="./asserts/images/reg skirt 1.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Asos</h5>
+            <p class="fw-bold fs-5">₹670</p>
+          </div>
+          <p class="fw-normal">Pure Cotton Tassel</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg skirt 2.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Sezane</h5>
+            <p class="fw-bold fs-5">₹840</p>
+          </div>
+          <p class="fw-normal">Polka Dot Mini A-Line</p>
+        </div>
+        <div>
+          <a href=""></a><img src="./asserts/images/reg skirt 3.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Marks & Spencer</h5>
+            <p class="fw-bold fs-5">₹1700</p>
+          </div>
+          <p class="fw-normal">A-Line Skirt</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg skirt 4.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Monoloq</h5>
+            <p class="fw-bold fs-5">₹1100</p>
+          </div>
+          <p class="fw-normal">Bubble hem Skirt</p>
+        </div>
+
+      </div>
+      <div id="t-shirt-4" class="container my-5 product-container">
+
+        <div>
+          <a href=""> <img src="./asserts/images/reg t-shirt 1.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">GritStones</h5>
+            <p class="fw-bold fs-5">₹999</p>
+          </div>
+          <p class="fw-normal">Luxury Men's Polo</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg t-shirt 2.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">C-IN2 New York</h5>
+            <p class="fw-bold fs-5">₹450</p>
+          </div>
+          <p class="fw-normal">Crew Neck Cotton</p>
+        </div>
+        <div>
+          <a href=""></a><img src="./asserts/images/reg t-shirt 3.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">AJIO</h5>
+            <p class="fw-bold fs-5">₹1450</p>
+          </div>
+          <p class="fw-normal">Regular Fit T-Shirt</p>
+        </div>
+        <div>
+          <a href=""> <img src="./asserts/images/reg t-shirt 4.png" width="250"></a>
+          <div class="d-flex justify-content-between ">
+            <h5 class="fw-bold fs-5">Nextt</h5>
+            <p class="fw-bold fs-5">₹850</p>
+          </div>
+          <p class="fw-normal">Black T-Shirt</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center" id="arrivals">
+     <div class="grid m-5 ms-5">
+  <div class="cell" id="tl">1</div>
+  <div class="cell" id="tr">2</div>
+  <div class="cell" id="bl">3</div>
+  <div class="cell" id="br">4</div>
+</div>
+      <div class="text-light m-5 mt-5 pt-4">
+        <p class="fs-5">Offer Running for All Month</p>
+        <h4 class="fw-bold">50% OFF ON ALL NEW<br>ARRIVALS</h4>
+        <a href="./catagory.html"><button id="explore-btn" class="ms-3 w-50">Explore More</button></a>
+      </div>
+    </div>
+    <div class="container ps-5">
+      <h4 class="fw-bold my-4 mt-3">REFLECT YOUR JOURNAL</h4>
+      <p>Stay updated with the latest fashion trends, style tips, and the behind-the-scenes of our collections.Get
+        inspired and learn how to reflect your unique style every day.</p>
+      <div class="d-flex flex-wrap gap-3">
+        <div>
+          <img src="./asserts/images/reg -journal image 1.png" alt="journalimg1" class="img-fluid" width="500"
+            height="400">
+          <p class="fw-bold fs-3 my-3">Fashion trend you should know in 2025</p>
+          <p>Stay updated with the latest fashion trends, style tips, and the behind-<br>the-scenes of our
+            collections.Get inspired and learn how to reflect your<br> unique style every day.</p>
+          <div id="readmore">Read More <span class=" bg-light text-dark ms-4" id="span"><i
+                class="bi bi-arrow-right"></i>
+            </span></div>
+        </div>
+        <div>
+          <img src="./asserts/images/reg-journal image 2.png" alt="journalimg2" width="250" height="340">
+          <p class="fw-bold fs-3 my-3">Summer Pieces To<br> Transition</p>
+          <p>Get inspired and learn how to<br> reflect your unique style every day.</p>
+          <div id="readmore">Read More <span class=" bg-light text-dark ms-4" id="span"><i
+                class="bi bi-arrow-right"></i>
+            </span></div>
+        </div>
+        <div>
+          <img src="./asserts/images/reg-journal image 3.png" alt="journalimg2" width="250" height="340">
+          <p class="fw-bold fs-3 my-3">The Best fabric for<br>Babies </p>
+          <p>Get inspired and learn how to<br> reflect your unique style every day.</p>
+          <div id="readmore">Read More <span class=" bg-light text-dark ms-4" id="span"><i
+                class="bi bi-arrow-right"></i>
+            </span></div>
+        </div>
+      </div>
+    </div>
+    <div class="relative-container">
+      <img src="./asserts/images/Screenshot 2025-05-10 021825.png" id="subscribe-img" class="my-5 img-fluid">
+      <form class="email-form  d-flex align-items-center justify-content-between w-50">
+        <input type="email" placeholder="Enter your Email address here" id="mail" required>
+        <button type="submit" class="btn p-0 border-0 bg-transparent">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="d-flex flex-wrap gap-5 mx-3 p-4 my-3">
+      <div class="d-flex flex-column gap-2" id="navigate">
+        <h5 class="text-light border-bottom border-light w-50">NAVIGATE</h5>
+        <a href="./rrr.html" class="footer-link text-light">Replacements, Returns & Refunds</a>
+        <a href="./news.html" class="footer-link text-light">News & Promotions</a>
+        <a href="./aboutus.html" class="footer-link text-light">About Us</a>
+        <a href="./terms.html" class="footer-link text-light">Terms of Service</a>
+        <a href="./privacypolicy.html" class="footer-link text-light">Privacy Policy</a>
+        <a href="./howtoorder.html" class="footer-link text-light">How to order</a>
+
+      </div>
+      <!-- IN-STORE SHOPPING -->
+      <div class="col-md-4 mb-4 text-light">
+        <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">
+          <i class="bi bi-shop me-2"></i>In-Store Shopping
+        </h6>
+        <p class="mb-0">House of StyleCo.<br>South Fairlands,<br>Salem - 636 302</p>
+      </div>
+
+      <!-- COMPANY INFO -->
+      <div class="col-md-4 mb-4 text-light">
+        <h6 class="fw-bold text-uppercase mb-3 border-bottom d-inline-block">StyleCo.</h6>
+        <p class="mb-1">Reg: S1203014054</p>
+        <p class="mb-1">TIN: 10920IGST1204</p>
+        <p class="mb-1">Phone: +91 90121 90121</p>
+        <p>Email: styleco@gmail.com</p>
+      </div>
+    </div>
+    <!-- SOCIAL ICONS -->
+    <div class="text-center mb-3">
+      <!-- <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a> -->
+      <img src="./asserts/icons/social media icons.png">
+    </div>
+
+    <div class=" text-dark py-3 mt-3 text-center fw-bold" id="copyright">
+      <span>StyleCo. <i class="bi bi-c-circle"></i> 2022</span>
+    </div>
+  </footer>
+  <script src="./asserts/js/header.js"></script>
+
+  <script src="./asserts/js/productdetails.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+* {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+}
+
+#saleHeader, #copyright
+ {
+    background-color: #F1F6FC;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+.navbar .badge {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    font-size: 0.6rem;
+    background-color: red;
+}
+
+.navbar-divider {
+    height: 24px;
+    border-left: 1px solid white;
+    margin: 0 0.75rem;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+
+}
+
+nav {
+    background-color: #071937;
+
+}
+
+.dropdown-item:hover {
+    background-color: #071937;
+    color: #F1F6FC;
+}
+
+ 
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 1.5px; /* Adjust thickness as needed */
+    text-underline-offset: 2px;
+  }
+  
+  #footer{
+      background-color: #071937;
+  }
