@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asserts/css/header.css">
+
+    <style>
+        .b-image {
+            height: 15vh;
+            background-image: url(./asserts/Images/header\ image\ in\ wholesale\,\ best\ seller\,\ new\ arrival.png);
+
+        }
+
+        #sortDropdown {
+            background-color: #E61A52;
+            color: white;
+            padding: 20px;
+            border-radius: 30px;
+            width: 300px;
+        }
+
+        .page {
+            width: 30px;
+            height: 30px;
+            border-radius: 7px;
+            background-color: #E61A52;
+            color: white;
+        }
+
+        #left-section {
+            border-right: 2px solid #f786a4;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #f786a4;
+
+            button {
+                width: 80%;
+                padding: 5px;
+            }
+        }
+
+        .form-check input[type="checkbox"]:checked {
+            background-color: #E61A52;
+            border-color: #E61A52;
+        }
+
+        button {
+            background-color: #E61A52;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            padding: 5px;
+        }
+
+        .info {
+            background-color: #f9ecef;
+            gap: 30px;
+            padding: 40px;
+            border-radius: 30px;
+
+            h4 {
+                color: #E61A52;
+            }
+        }
+
+        .slider-container {
+            width: 245px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .value-bubble {
+            position: absolute;
+            top: -20px;
+            left: 10%;
+            transform: translateX(-50%);
+            background-color: #e91e63;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .value-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: #e91e63 transparent transparent transparent;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 8px;
+            background: #f8bbd0;
+            border-radius: 6px;
+            outline: none;
+            margin-top: 20px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #e91e63;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            margin-top: -4px;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #e91e63;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="running-text-container">
+        <div class="running-text-wrapper">
+            <!-- Original Content -->
+            <p>Play More, Pay Less: Perfect Time To Grab Your Discount Today....</p>
+            <p>Toy Bonanza: Up to 30% Off on Outdoor Toys</p>
+            <p>Unlock Joy: Enjoy 20% Off Your First Order!</p>
+
+            <!-- Duplicate Content for Seamless Loop -->
+            <p>Play More, Pay Less: Perfect Time To Grab Your Discount Today....</p>
+            <p>Toy Bonanza: Up to 30% Off on Outdoor Toys</p>
+            <p>Unlock Joy: Enjoy 20% Off Your First Order!</p>
+        </div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar d-flex justify-content-between align-items-center">
+        <div>
+            <strong>BUYING IN BULK?...</strong> <a href="./wholesale.html">CLICK HERE</a>
+        </div>
+        <div>
+            <a href="./deliveryinfo.html">Delivery Information</a>
+            <a href="./trackorder.html">Track My Order</a>
+            <a href="./faq.html">FAQs</a>
+            <i class="bi bi-clock ms-2"></i>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+            <!-- Logo -->
+            <a href="./Home.html"><img src="./asserts/Icons/logo.png" width="80" alt="logo"></a>
+
+            <!-- Search Bar -->
+            <form action="./catagories.html" method="get" class="search-container d-flex flex-grow-1 mx-3">
+                <input type="text" name="query" class="form-control search-input" placeholder="Search for toys..."
+                    required>
+                <button type="submit" class="btn btn-link p-0">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <!-- Right Actions -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="./wholesale.html"><button class="wholesale-btn">WHOLESALE DEALS</button></a>
+                <a href="./basket.html"><button class="icon-btn"><img src="./asserts/Icons/cart icon.png"
+                            alt="cart-icon"></button></a>
+                <a href="./login.html"><button class="icon-btn"><img src="./asserts/Icons/user icon.png"
+                            alt="user-icon"></button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu text-center">
+        <a href="./Home.html">HOME</a>
+        <a href="./catagories.html">CATEGORIES</a>
+        <a href="./bestseller.html">BEST SELLER</a>
+        <a href="./blogs.html">BLOG</a>
+    </div>
+    <div class="b-image d-flex justify-content-between align-items-center mb-3">
+        <h4 class="text-light fw-bold ms-5">New Arrivals</h2>
+            <div>
+                <li class="nav-item dropdown d-flex align-items-center justify-content-between mx-5" id="sortDropdown">
+                    Sort By: <span id="sortOption" class="sort-option">Featured&nbsp;&nbsp;&nbsp;</span>
+
+                    <a class="nav-link p-0 text-dark" href="#" id="sortDropdownToggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="sortDropdownIcon" class="bi bi-chevron-down dropdown-icon"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" id="dropdownMenu">
+                        <li class="dropdown-item">Featured</li>
+                        <li class="dropdown-item">Best Selling</li>
+                        <li class="dropdown-item">Alphabetically, A-Z</li>
+                        <li class="dropdown-item">Alphabetically, Z-A</li>
+                        <li class="dropdown-item">Price, low to high</li>
+                        <li class="dropdown-item">Price, high to low</li>
+                    </ul>
+                </li>
+            </div>
+    </div>
+    <main class="container fs-5 mb-5 pb-5">
+
+        <div class="container mb-5 pb-1" id="main-container">
+            <div class="row">
+                <div class="col-md-9 m-4 p-5" id="left-section">
+                    <p class="text-center fw-bold fs-4" style="color: #E61A52;">New Arrivals!</p>
+                    <p class="text-center px-5 fs-5">At <span style="color: #E61A52;">Kids Stuff for Less</span>, we're
+                        fearless! when a line
+                        starts to sell well, we try to
+                        buy as much of the item as we can so our customers get a chance to purchase a winning product.
+                        Sometimes this means we are holding large quantities of a line so this is when we can offer it
+                        out at a wholesale price. We're adding bulk products all the time and have many happy customers
+                        that buy regularly on this basis. So whether you're a trader, a school, a club or just someone
+                        that needs a decent quantity of a line, this section's for you.</p>
+                    <div class="row row-cols-1 row-cols-md-3 g-5 d-flex flex-wrap">
+
+                        <div class="col">
+                            <div class="card border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 1.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold ">Coloring Books</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹1520</span><br>
+                                    <span class="new-price fw-bold">Now ₹1200</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 2.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Mini Space Slime</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 3.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Squishy yellow Balls</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹1520</span><br>
+                                    <span class="new-price fw-bold">Now ₹1200</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 4.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Coloring Books</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card  text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 5.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Mini Space Slime</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 6.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Mini Space Slime</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 7.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Mini Space Slime</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 8.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Mini Space Slime</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 9.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Mini Space Slime</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-none text-center">
+                                <a href="./dinosaurs.html"><img src="./asserts/Images/new arrival 10.png"
+                                        class="card-img-top" alt="newborn1"></a>
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Mini Space Slime</p>
+
+                                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹500</span><br>
+                                    <span class="new-price fw-bold">Now ₹320</span>
+
+                                </div>
+                                <a href="./basket.html"><button>Add To Cart</button></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- FILTER SECTION -->
+                <div class="col-md-2 ps-4 fw-bold">
+                    <div class="mt-4 fs-4 fw-bold d-flex justify-content-between">
+                        <p>Filter</p>
+                        <img src="https://img.icons8.com/?size=100&id=QMIPs1QHaKBA&format=png&color=000000" width="25"
+                            height="25" class="mt-2">
+                    </div>
+                    <h5 class="fw-bold fs-5 mb-3 border-bottom border-dark">Filter by price</h5>
+                    <div class="slider-container">
+                        <div class="value-bubble" id="bubble">100</div>
+                        <input type="range" id="slider" min="100" max="2000" step="100" value="100">
+                    </div>
+
+                    <h5 class="fw-bold fs-5 mb-3 border-bottom border-dark">Filter by Brands</h5>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5 " type="checkbox" value="" id="option1">
+                        <label class="form-check-label fs-5" for="option1">
+                            LEGO
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option2">
+                        <label class="form-check-label fs-5" for="option2">
+                            Barbie
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option3">
+                        <label class="form-check-label fs-5" for="option3">
+                            Hasbro
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option4">
+                        <label class="form-check-label fs-5" for="option4">
+                            Mattle
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Fisher-Price
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Playmobil
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Nerf
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Melissa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" style="accent-color: #071937;"
+                            id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            VTech
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" style="accent-color: #071937;"
+                            id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            Hot Wheels
+                        </label>
+                    </div>
+                    <h5 class="fw-bold fs-5 m-3 border-bottom border-dark">Filter by Age</h5>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5 " type="checkbox" value="" id="option1">
+                        <label class="form-check-label fs-5" for="option1">
+                            0-5 months
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option2">
+                        <label class="form-check-label fs-5" for="option2">
+                            6-8 months
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option3">
+                        <label class="form-check-label fs-5" for="option3">
+                            9-12 months
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option4">
+                        <label class="form-check-label fs-5" for="option4">
+                            1-2 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            2-3 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            3-4 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            4-5 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            5-6 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            6-8 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            8-10 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            10-12 years
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input fs-5" type="checkbox" value="" id="option5">
+                        <label class="form-check-label fs-5" for="option5">
+                            12-14 years
+                        </label>
+                    </div>
+                    <br>
+
+                    <!--  -->
+                </div>
+
+            </div>
+        </div>
+        <div class="page text-center mx-auto mb-5">1</div>
+
+        <div class="info mt-5 d-flex flex-wrap flex-md-nowrap justify-content-between">
+            <div class="text-center">
+                <img src="./asserts/Icons/delivery icon.png" width="70" alt="delivery icon">
+                <h4 class="fw-bold pt-2">DELIVERY</h4>
+                <p class="fw-semibold">Delivered within<br> 2 to 3 days</p>
+            </div>
+            <div class="text-center">
+                <img src="./asserts/Icons/payment icon.png" width="70" alt="payment icon">
+                <h4 class="fw-bold pt-2">PAYMENT</h4>
+                <p class="fw-semibold">Secured<br> payment</p>
+            </div>
+            <div class="text-center">
+                <img src="./asserts/Icons/contact icon.png" width="70" alt="contact icon">
+                <h4 class="fw-bold pt-2">CONTACT</h4>
+                <p class="fw-semibold">90000 91245<br>91427 84571 </p>
+            </div>
+            <div class="text-center">
+                <img src="./asserts/Icons/location icon.png" width="70" alt="location icon">
+                <h4 class="fw-bold pt-2">LOCATION</h4>
+                <p class="fw-semibold">Salem,<br> Tamilnadu</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer text-white py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- Logo & Description -->
+                <div class="col-md-4 mb-4">
+                    <img src="./asserts/Icons/logo.png" alt="K-Stuffs Logo" style="height: 80px;">
+                    <p class="mt-3 mb-0">We are a leading toy store<br> brings exciting goods<br> all over the country.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">NAVIGATE</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="./privacypolicy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="./terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="./howtoorder.html" class="footer-link">How to Order</a></li>
+                        <li><a href="./aboutus.html" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">K-STUFFS</h5>
+                    <p class="mt-3 mb-1">Reg: T2154875GST154</p>
+                    <p class="mb-1">TIN: 12022457845</p>
+                    <p class="mb-1">Phone: +91 90000 91010</p>
+                    <p>Email: kstuffs@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="text-center my-3">
+                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4 fw-bold">
+                Copyrights 2022© Kids Stuff Ltd
+            </div>
+        </div>
+    </footer>
+    <script>
+        const sortOptionSpan = document.getElementById('sortOption');
+        const sortDropdownIcon = document.getElementById('sortDropdownIcon');
+        const sortDropdownToggle = document.getElementById('sortDropdownToggle');
+        const sortItems = document.querySelectorAll('#dropdownMenu .dropdown-item');
+
+        // Toggle arrow direction when dropdown is clicked
+        sortDropdownToggle.addEventListener('click', () => {
+            setTimeout(() => {
+                const isExpanded = sortDropdownToggle.getAttribute('aria-expanded') === 'true';
+                sortDropdownIcon.classList.toggle('bi-chevron-up', isExpanded);
+                sortDropdownIcon.classList.toggle('bi-chevron-down', !isExpanded);
+            }, 10);
+        });
+
+        // When a dropdown item is clicked
+        sortItems.forEach(item => {
+            item.addEventListener('click', () => {
+                sortOptionSpan.textContent = item.textContent;
+                sortDropdownIcon.classList.remove('bi-chevron-up');
+                sortDropdownIcon.classList.add('bi-chevron-down');
+            });
+        });
+    </script>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const bubble = document.getElementById('bubble');
+
+        function updateBubble() {
+            const val = +slider.value;
+            bubble.innerText = val;
+
+            const sliderWidth = slider.offsetWidth;
+            const min = +slider.min;
+            const max = +slider.max;
+            const percent = (val - min) / (max - min);
+            const offset = percent * sliderWidth;
+
+            bubble.style.left = `${offset}px`;
+        }
+
+        slider.addEventListener('input', updateBubble);
+        window.addEventListener('load', updateBubble);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

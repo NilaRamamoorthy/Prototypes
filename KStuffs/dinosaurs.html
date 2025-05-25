@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asserts/css/header.css">
+
+    <style>
+        .btn {
+            border: 2px solid #E61A52;
+            color: #E61A52;
+            background-color: white;
+            border-radius: 20px;
+            height: 30px;
+            padding-bottom: 10px;
+        }
+
+        .count {
+            width: 30px;
+            height: 30px;
+            border-radius: 7px;
+            background-color: #E61A52;
+            color: white;
+            line-height: 30px;
+        }
+
+        #operator {
+            cursor: pointer;
+            color: #E61A52;
+        }
+
+        .model {
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="running-text-container">
+        <div class="running-text-wrapper">
+            <!-- Original Content -->
+            <p>Play More, Pay Less: Perfect Time To Grab Your Discount Today....</p>
+            <p>Toy Bonanza: Up to 30% Off on Outdoor Toys</p>
+            <p>Unlock Joy: Enjoy 20% Off Your First Order!</p>
+
+            <!-- Duplicate Content for Seamless Loop -->
+            <p>Play More, Pay Less: Perfect Time To Grab Your Discount Today....</p>
+            <p>Toy Bonanza: Up to 30% Off on Outdoor Toys</p>
+            <p>Unlock Joy: Enjoy 20% Off Your First Order!</p>
+        </div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar d-flex justify-content-between align-items-center">
+        <div>
+            <strong>BUYING IN BULK?...</strong> <a href="./wholesale.html">CLICK HERE</a>
+        </div>
+        <div>
+            <a href="./deliveryinfo.html">Delivery Information</a>
+            <a href="./trackorder.html">Track My Order</a>
+            <a href="./faq.html">FAQs</a>
+            <i class="bi bi-clock ms-2"></i>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+            <!-- Logo -->
+            <a href="./Home.html"> <img src="./asserts/Icons/logo.png" width="80" alt="logo"></a>
+
+            <!-- Search Bar -->
+            <form action="./catagories.html" method="get" class="search-container d-flex flex-grow-1 mx-3">
+                <input type="text" name="query" class="form-control search-input" placeholder="Search for toys..."
+                    required>
+                <button type="submit" class="btn btn-link p-0">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <!-- Right Actions -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="./wholesale.html"><button class="wholesale-btn">WHOLESALE DEALS</button></a>
+                <a href="./basket.html"><button class="icon-btn"><img src="./asserts/Icons/cart icon.png"
+                            alt="cart-icon"></button></a>
+                <a href="./login.html"><button class="icon-btn"><img src="./asserts/Icons/user icon.png"
+                            alt="user-icon"></button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu text-center">
+        <a href="./Home.html">HOME</a>
+        <a href="./catagories.html">CATEGORIES</a>
+        <a href="./bestseller.html">BEST SELLER</a>
+        <a href="./blogs.html">BLOG</a>
+    </div>
+    <div class="heading text-center fw-bold fs-2 mb-5">Dinosaur Brick Set</div>
+    <main class="container">
+        <div class="d-flex flex-wrap flex-md-nowrap gap-5">
+            <img src="./asserts/Images/dinosaur image-des.png" height="520" alt="dinosaurs">
+            <div>
+                <h3 style="color: #E61A52;" class="fw-bold fs-3">Dinosaur Wooden Magnet Decorating Kit</h3>
+                <div class="py-3">
+                    <span class="text-muted text-decoration-line-through me-2">MRP: ₹1520</span>
+                    <span class="new-price fw-bold">Now: ₹1200</span>
+                </div>
+                <p>Fantastic value on this super wooden magnet decorating kit. Create your own fabulous magnet. Contains
+                    wood magnet,fet pens and wiggly eye. Pack size <br>16 x 10.5cms</p>
+                <p class="text-success fw-bold">IN STOCK</p>
+                <div class="d-flex gap-5">
+                    <div class="d-flex gap-3">
+                        <p id="operator" onclick="minus(this)">-</p>
+                        <div class="count text-center">1</div>
+                        <p id="operator" onclick="plus(this)">+</p>
+                    </div>
+                    <a href="./basket.html"><button class="btn fs-6 fw-bold pb-3">ADD TO BASKET</button></a>
+                </div>
+                <div class="model mt-3">SKU:EU125/h545</div>
+                <div class="d-flex gap-2 mt-5">
+                    <img src="https://img.icons8.com/?size=100&id=487&format=png&color=000000" width="25" height="25"
+                        alt="delivery-icon">
+                    <p>Free shipping on all orders over 450 rupees</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <img src="https://img.icons8.com/?size=100&id=ljkZKAqMoIYA&format=png&color=000000" width="25"
+                        height="25" alt="time-icon">
+                    <p>Delivery in 3-4 working days shipping & return</p>
+                </div>
+                <p class="text-success text-decoration-underline">Free delivery and return policies</p>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h3 class="fw-bold text-decoration-underline mt-5">DESCRIPTION</h3>
+            <p>Wooden toys are playthings primerily made from wood, often with additional components from other
+                materials like paint or metal. They are known for their durability, safety, and ability to stimulate
+                imaginative and open-ended play. Wooden toys are considered environmental friendly and sustainable, as
+                wood is renewable resourse</p>
+            <p class="fw-bold text-decoration-underline">Key Features and Benefits:</p>
+            <ul>
+                <li>Durability:<br>Wooden toys are generally more durable than plastic toys and can withstand rough
+                    play, often lasting for generations.</li>
+                <li>Safety:<br>Wood is a natural material, and wooden toys are less likely to break into small,
+                    dangerous pieces.</li>
+                <li>Open-ended Play:<br>Wooden toys often encourage children to use their imagination and creativity,
+                    allowing them to explore different ways to play.</li>
+                <li>Tactile Experience:<br>The natural feel of wood provides a sensory experience that can help children
+                    develope their sense of touch</li>
+            </ul>
+            <p class="fw-bold text-decoration-underline">Examples of Wooden Toys</p>
+            <ul>
+                <li>Blocks</li>
+                <li>Puzzles</li>
+                <li>Toy cars and trains</li>
+                <li>Dolls and figures</li>
+                <li>Construction sets</li>
+                <li>Board games</li>
+                <li>Musical instruments</li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer text-white py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- Logo & Description -->
+                <div class="col-md-4 mb-4">
+                    <img src="./asserts/Icons/logo.png" alt="K-Stuffs Logo" style="height: 80px;">
+                    <p class="mt-3 mb-0">We are a leading toy store<br> brings exciting goods<br> all over the country.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">NAVIGATE</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="./privacypolicy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="./terms.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="./howtoorder.html" class="footer-link">How to Order</a></li>
+            <li><a href="./aboutus.html" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">K-STUFFS</h5>
+                    <p class="mt-3 mb-1">Reg: T2154875GST154</p>
+                    <p class="mb-1">TIN: 12022457845</p>
+                    <p class="mb-1">Phone: +91 90000 91010</p>
+                    <p>Email: kstuffs@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="text-center my-3">
+                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4 fw-bold">
+                Copyrights 2022© Kids Stuff Ltd
+            </div>
+        </div>
+    </footer>
+    <script>
+        function minus(el) {
+            const countEl = el.parentElement.querySelector('.count');
+            let count = parseInt(countEl.innerText);
+            if (count > 1) {
+                countEl.innerText = count - 1;
+
+            }
+        }
+
+        function plus(el) {
+            const countEl = el.parentElement.querySelector('.count');
+            let count = parseInt(countEl.innerText);
+            countEl.innerText = count + 1;
+
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
