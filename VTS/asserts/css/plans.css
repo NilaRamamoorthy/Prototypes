@@ -153,7 +153,8 @@
 
         .end-horizontal-line {
             position: absolute;
-            top: 93.3%;
+            /* top: 93.3%; */
+            top: 96.5%;
             left: 94%;
             transform: rotate(90deg);
             transform-origin: top left;
@@ -164,7 +165,8 @@
 
         .center-horizontal-line {
             position: absolute;
-            top: 48.3%;
+            /* top: 48.3%; */
+            top: 52%;
             left: 94%;
             transform: rotate(90deg);
             transform-origin: top left;
