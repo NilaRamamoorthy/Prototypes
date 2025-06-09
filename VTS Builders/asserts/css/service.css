@@ -1,0 +1,142 @@
+
+    .title {
+        font-size: 65px;
+        color: #2E4053;
+        margin-left: 8%;
+    }
+
+    .info-card {
+        background-color: #FFFFFF;
+        padding: 35px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        height: auto;
+      
+    }
+    .full-info-card {
+        transition: all 0.4s ease;
+    }
+
+    .full-info-card :hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+    }
+
+    .border {
+        background-color: #FFFFFF;
+        height: 10px;
+        width: 30%;
+    }
+
+    .services {
+        padding-top: 20px;
+        background-color: #2E4053;
+        color: #FFFFFF;
+        border-bottom: 2px solid #131e2b;
+        padding-bottom: 50px;
+
+    }
+
+    .service-info {
+        font-size: 12px;
+    }
+
+    /* Step offset effect: larger index = lower on screen */
+    .step-0 {
+        margin-top: 140px;
+    }
+
+    .step-1 {
+        margin-top: 0px;
+    }
+
+    .step-2 {
+        margin-top: -140px;
+    }
+
+    .step-3 {
+        margin-top: 50px;
+    }
+
+    .step-4 {
+        margin-top: -100px;
+    }
+
+    .step-5 {
+        margin-top: -200px;
+    }
+
+    .step-6 {
+        margin-top: 50px;
+    }
+
+    .step-7 {
+        margin-top: -90px;
+    }
+
+    .step-8 {
+        margin-top: -200px;
+    }
+
+    .btn-quote {
+        color: #2E4053;
+        background-color: #FFFFFF;
+    }
+
+    .quote-button {
+        margin-top: -60px;
+    }
+
+    @media (max-width: 767.98px) {
+
+        .step-0,
+        .step-1,
+        .step-2,
+        .step-3,
+        .step-4,
+        .step-5,
+        .step-6,
+        .step-7,
+        .step-8 {
+            margin-top: 0 !important;
+        }
+
+        .quote-button {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 1023px) {
+
+
+        .step-2 {
+            margin-top: 20px;
+        }
+
+        .step-3 {
+            margin-top: -120px;
+        }
+
+        .step-4 {
+            margin-top: 20px;
+        }
+
+        .step-5 {
+            margin-top: -120px;
+        }
+
+        .step-6 {
+            margin-top: 40px;
+        }
+
+        .step-7 {
+            margin-top: -90px;
+        }
+
+        .step-8 {
+            margin-top: 20px;
+        }
+
+        .quote-button {
+            margin-top: 0;
+        }
+    }

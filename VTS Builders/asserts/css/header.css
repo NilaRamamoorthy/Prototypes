@@ -1,0 +1,132 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: "DM Sans", sans-serif;
+     font-optical-sizing: auto;
+     scroll-behavior: smooth;
+
+ }
+
+ .hero-wrapper {
+
+     height: 68vh;
+     width: 100%;
+     box-shadow: 0 3px 0px rgba(128, 128, 128, 0.2);
+     position: relative;
+
+ }
+
+ .hero-overlay {
+     position: absolute;
+     inset: 0;
+     z-index: 1;
+ }
+
+ .logo-name {
+     color: #2E4053;
+     font-size: 18px;
+ }
+
+ .navbar {
+     background: transparent !important;
+     z-index: 2;
+ }
+
+ .nav-link.active {
+     color: #6c757d;
+
+ }
+
+ .nav-link {
+     color: #000000;
+
+ }
+
+ .nav-link:hover {
+     color: #6c757d;
+ }
+
+ .navbar-brand img {
+     height: 40px;
+     margin-right: 10px;
+ }
+
+ .hero-heading {
+     margin-top: 8%;
+     font-size: 60px;
+     color: #2E4053;
+ }
+
+ .hero-info {
+     font-size: 8px;
+     margin-bottom: 50px;
+ }
+
+ .btn-enquiry {
+     padding: 6px;
+     border-radius: 5px;
+     font-size: 11px;
+     width: 120px;
+     color: #FFFFFF;
+     background-color: #2E4053;
+ }
+
+ .btn-quote {
+     color: white;
+     background-color: #000000;
+     padding: 20px 30px;
+     border-radius: 10px;
+ }
+a{
+    /* color: white; */
+text-decoration: none;
+}
+ /* Footer */
+ footer {
+     background-color: #2E4053;
+     color: #FFFFFF;
+
+     p {
+         font-size: 14px;
+     }
+ }
+
+ .footer-info-links {
+     display: flex;
+     gap: 70px;
+   
+ }
+
+ .socials i {
+     background-color: rgba(219, 216, 216, 0.3);
+     padding: 3px 7px 3px;
+
+ }
+
+ .input-with-button {
+     position: relative;
+     max-width: 400px;
+     margin: auto;
+ }
+
+ .input-with-button input {
+     padding-right: 100px;
+     border-top-left-radius: 13px;
+ }
+
+ .input-with-button button {
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 100%;
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+     background-color: #2E4053;
+     color: #FFFFFF;
+     font-style: bold;
+ }
+
+ a:link {
+     text-decoration: none;
+ }
