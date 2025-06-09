@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./asserts/css/header.css">
+    <link rel="stylesheet" href="./asserts/css/index.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,198 +26,7 @@
             height: 110vh;
         }
 
-        .border {
-            background-color: #2E4053;
-            width: 35%;
-            height: 13px;
-        }
-
-        .index-about-title {
-            font-size: 45px;
-        }
-
-        .index-about-para {
-            font-size: 19px;
-        }
-
-        .index-about-heading,
-        .index-about-para {
-            color: #2E4053;
-        }
-
-        .btn-index-about {
-            background-color: black;
-            border: none;
-            border-radius: 3px;
-            padding: 7px;
-            font-size: 20px;
-            width: 180px;
-
-            img {
-                width: 16px;
-            }
-        }
-
-        .image-frame {
-            margin-top: 50px;
-            margin-left: 40px;
-            position: relative;
-            aspect-ratio: 3/2;
-            width: 90%;
-            max-width: 500px;
-            height: 600px;
-            border-top: 27px solid #2E4053;
-            border-left: 20px solid #2E4053;
-            border-bottom: 27px solid #2E4053;
-            border-right: 20px solid #2E4053;
-            overflow: visible;
-
-        }
-
-        .about-img {
-            position: absolute;
-            top: -15%;
-            left: -16%;
-            width: 110%;
-            height: 106%;
-            object-fit: cover;
-        }
-
-        .index-about-social img {
-            width: 25px;
-        }
-
-
-        /* Service Section */
-        .services {
-            padding-top: 20px;
-            background-color: #2E4053;
-            color: #FFFFFF;
-            padding-bottom: 50px;
-        }
-
-        .info-card {
-            background-color: #FFFFFF;
-            padding: 35px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            height: auto;
-
-        }
-
-        .full-info-card {
-            transition: all 0.4s ease;
-        }
-
-        .full-info-card :hover {
-            cursor: pointer;
-            transform: translateY(-10px);
-        }
-
-        .border {
-            background-color: #FFFFFF;
-            height: 10px;
-            width: 30%;
-        }
-
-        .step-0 {
-            margin-top: 140px;
-        }
-
-        .step-1 {
-            margin-top: 0px;
-        }
-
-        .step-2 {
-            margin-top: -140px;
-        }
-
-        .btn-quote {
-            color: #2E4053;
-            background-color: #FFFFFF;
-        }
-
-        .quote-button {
-            margin-top: -60px;
-        }
-
-        @media (max-width: 767.98px) {
-
-            .step-0,
-            .step-1,
-            .step-2 {
-                margin-top: 0 !important;
-            }
-
-            .quote-button {
-                margin-top: 0;
-            }
-        }
-
-        @media (max-width: 766px) {
-            .hero-wrapper {
-                height: 200vh;
-
-            }
-
-            .btn-quote {
-                font-size: 15px;
-                width: 300px;
-            }
-        }
-
-
-        /* Testimonial section */
-        .testimonial-border {
-            background-color: #2E4053;
-            width: 15%;
-            height: 13px;
-        }
-
-        .testimonial-title {
-            color: #2E4053;
-        }
-
-        .card-left {
-            margin-top: 30%;
-        }
-
-        /* Projects Section */
-        .btn-projects {
-            background-color: black;
-            color: #FFFFFF;
-            width: 200px;
-            border: none;
-            border-radius: 4px;
-            padding: 10px;
-        }
-
-        .projects-border {
-            background-color: #2E4053;
-            width: 25%;
-            height: 13px;
-        }
-
-        .project :hover {
-            cursor: pointer;
-            transform: translateY(-10px);
-        }
-
-
-        .projects p {
-            margin-top: 20px;
-            margin-bottom: 60px;
-            font-size: 24px;
-            color: #2E4053;
-        }
-
-        /* Current Work */
-        .text-dark-blue {
-            color: #2E4053;
-        }
-
-        .thick-border-end {
-            border-right: 1px solid black;
-        }
+       
     </style>
 </head>
 
@@ -260,8 +70,8 @@
                         Bring your dream home to life with expert construction services<br>
                         that exceed your expectations!
                     </p>
-                    <a href="./contact.html"><button class="btn-quote bg-dark text-light border-0 fw-bold">
-                        Get Free Quote →</button>
+                    <a href="./contact.html"><button class="btn-quote bg-dark text-light border-0 fw-bold"> Get Free
+                            Quote →</button>
                     </a>
                 </div>
             </div>
@@ -273,7 +83,7 @@
             <div class="index-about-left col-12 col-md-6">
                 <div>
                     <h1 class="index-about-title fw-bold">Welcome to the Concrete<br> Vetri Builders</h1>
-                    <div class="border"></div>
+                    <div class="index-about-border"></div>
                     <h3 class="index-about-heading my-5">Where We Build Your Visions</h3>
                     <p class="index-about-para fw-bold">At Vetri Builders, we understand that building your dream home
                         or commercial
@@ -284,10 +94,13 @@
                 </div>
                 <div class="">
                     <div class="index-about-social d-flex gap-3 mt-5 ms-4">
-                        <a href="https://www.facebook.com/"><img src="./asserts/images/flowbite_facebook-solid.png" alt="facebook"></a>
-                        <a href="https://www.twitter.com/"><img src="./asserts/images/streamline_computer-logo-twitter-media-twitter-social.png"
+                        <a href="https://www.facebook.com/"><img src="./asserts/images/flowbite_facebook-solid.png"
+                                alt="facebook"></a>
+                        <a href="https://www.twitter.com/"><img
+                                src="./asserts/images/streamline_computer-logo-twitter-media-twitter-social.png"
                                 alt="twitter"></a>
-                        <a href="https://www.instagram.com/"><img src="./asserts/images/mdi_instagram.png" alt="instagram"></a>
+                        <a href="https://www.instagram.com/"><img src="./asserts/images/mdi_instagram.png"
+                                alt="instagram"></a>
                     </div>
                     <p class="mt-4" style="font-size: 12px;">FOLLOW OUR WORK ON SOCIAL MEDIA</p>
                 </div>
@@ -449,8 +262,8 @@
         </div>
     </section>
     <!-- Projects section -->
-  
-        <div class="container">
+
+    <div class="container">
         <h1 class="fw-bold fs-1">Our Recent Projects</h1>
         <div class="projects-border"></div>
         <div class="d-flex justify-content-between">
@@ -459,45 +272,48 @@
                         class="bi bi-arrow-up-right text-white"></i>
                 </button></a>
         </div>
-        </div>
-        <div class="projects mx-4 mt-5">
-            <div class="d-flex flex-wrap flex-lg-nowrap gap-2">
-               <a href="./project1.html"><div class="project ">
-                <img src="./asserts/images/Rectangle 290.png" width="395">
-                <p class=" project-name text-center fw-bold">Nexus Shopping Mall</p>
-            </div></a>
-            <a href="./project2.html"><div class="project">
-                <img src="./asserts/images/Rectangle 292.png" width="395">
-                <p class="project-name text-center fw-bold">Skyskape Business Park</p>
-            </div></a>
-           <a href="./project3.html"><div class="project">
-                <img src="./asserts/images/Rectangle 291.png" width="395">
-                <p class="project-name  text-center fw-bold">Skyline Heights</p>
-            </div></a>
+    </div>
+    <div class="projects mx-4 mt-5">
+        <div class="row">
+            <div class="project col-12 col-md-6 col-lg-4">
+                <a href="./project1.html"><img src="./asserts/images/Rectangle 290.png" width="395">
+                    <p class=" project-name text-center fw-bold">Nexus Shopping Mall</p>
+                </a>
+            </div>
+            <div class="project col-12 col-md-6 col-lg-4">
+                <a href="./project2.html"><img src="./asserts/images/Rectangle 292.png" width="395">
+                    <p class="project-name text-center fw-bold">Skyskape Business Park</p>
+                </a>
+            </div>
+            <div class="project col-12 col-md-6 col-lg-4">
+                <a href="./project3.html"><img src="./asserts/images/Rectangle 291.png" width="395">
+                    <p class="project-name  text-center fw-bold">Skyline Heights</p>
+                </a>
             </div>
         </div>
-  
+    </div>
+
     <!-- Current Work Section -->
-       <div class="container py-5">
-  <div class="row text-center">
-    <div class="col-6 col-md-3 mb-4 mb-md-0 thick-border-end">
-      <h2 class="fw-bold text-dark-blue">9,987</h2>
-      <p class="fw-bold fs-6 text-muted mb-0">CLIENTS</p>
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-6 col-md-3 mb-4 mb-md-0 thick-border-end">
+                <h2 class="fw-bold text-dark-blue">9,987</h2>
+                <p class="fw-bold fs-6 text-muted mb-0">CLIENTS</p>
+            </div>
+            <div class="col-6 col-md-3 mb-4 mb-md-0 thick-border-end">
+                <h2 class="fw-bold text-dark-blue">5,432</h2>
+                <p class="fw-bold fs-6 text-muted mb-0">PROJECTS</p>
+            </div>
+            <div class="col-6 col-md-3 mb-4 mb-md-0 thick-border-end">
+                <h2 class="fw-bold text-dark-blue">2,127</h2>
+                <p class="fw-bold  fs-6 text-muted mb-0">REPAIRING</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h2 class="fw-bold text-dark-blue">1,012</h2>
+                <p class="fw-bold fs-6 text-muted mb-0">AWARDS</p>
+            </div>
+        </div>
     </div>
-    <div class="col-6 col-md-3 mb-4 mb-md-0 thick-border-end">
-      <h2 class="fw-bold text-dark-blue">5,432</h2>
-      <p class="fw-bold fs-6 text-muted mb-0">PROJECTS</p>
-    </div>
-    <div class="col-6 col-md-3 mb-4 mb-md-0 thick-border-end">
-      <h2 class="fw-bold text-dark-blue">2,127</h2>
-      <p class="fw-bold  fs-6 text-muted mb-0">REPAIRING</p>
-    </div>
-    <div class="col-6 col-md-3">
-      <h2 class="fw-bold text-dark-blue">1,012</h2>
-      <p class="fw-bold fs-6 text-muted mb-0">AWARDS</p>
-    </div>
-  </div>
-</div>
 
     <!-- Footer -->
     <footer class="pt-5" id="index-footer">

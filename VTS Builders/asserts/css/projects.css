@@ -1,0 +1,41 @@
+
+        .title {
+            font-size: 65px;
+            color: #2E4053;
+            margin-left: 8%;
+        }
+
+        .project :hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+
+        .project-title {
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project-para {
+            color: #2E4053;
+        }
+
+        .border {
+            background-color: #2E4053;
+            height: 10px;
+            width: 25%;
+        }
+
+        .projects p {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            font-size: 30px;
+            color: #2E4053;
+        }
+
+        @media (max-width:1024px) {
+            .projects img {
+                width: 300px;
+
+            }
+        }

@@ -1,0 +1,192 @@
+ /* About Section */
+        .index-about-title {
+            font-size: 45px;
+        }
+
+        .index-about-para {
+            font-size: 19px;
+        }
+
+        .index-about-heading,
+        .index-about-para {
+            color: #2E4053;
+        }
+
+        .btn-index-about {
+            background-color: black;
+            border: none;
+            border-radius: 3px;
+            padding: 7px;
+            font-size: 20px;
+            width: 180px;
+
+            img {
+                width: 16px;
+            }
+        }
+
+        .image-frame {
+            margin-top: 50px;
+            margin-left: 40px;
+            position: relative;
+            aspect-ratio: 3/2;
+            width: 90%;
+            max-width: 500px;
+            height: 600px;
+            border-top: 27px solid #2E4053;
+            border-left: 20px solid #2E4053;
+            border-bottom: 27px solid #2E4053;
+            border-right: 20px solid #2E4053;
+            overflow: visible;
+
+        }
+
+        .about-img {
+            position: absolute;
+            top: -15%;
+            left: -16%;
+            width: 110%;
+            height: 106%;
+            object-fit: cover;
+        }
+
+        .index-about-social img {
+            width: 25px;
+        }
+
+        .index-about-border {
+            background-color: #2E4053;
+            height: 10px;
+            width: 30%;
+        }
+
+        /* Service Section */
+        .services {
+            padding-top: 20px;
+            background-color: #2E4053;
+            color: #FFFFFF;
+            padding-bottom: 50px;
+        }
+
+        .info-card {
+            background-color: #FFFFFF;
+            padding: 35px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            height: auto;
+
+        }
+
+        .full-info-card {
+            transition: all 0.4s ease;
+        }
+
+        .full-info-card :hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+
+        .border {
+            background-color: #FFFFFF;
+            height: 10px;
+            width: 30%;
+        }
+
+        .step-0 {
+            margin-top: 140px;
+        }
+
+        .step-1 {
+            margin-top: 0px;
+        }
+
+        .step-2 {
+            margin-top: -140px;
+        }
+
+        .btn-quote {
+            color: #2E4053;
+            background-color: #FFFFFF;
+        }
+
+        .quote-button {
+            margin-top: -60px;
+        }
+
+        @media (max-width: 767.98px) {
+
+            .step-0,
+            .step-1,
+            .step-2 {
+                margin-top: 0 !important;
+            }
+
+            .quote-button {
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 766px) {
+            .hero-wrapper {
+                height: 200vh;
+
+            }
+
+            .btn-quote {
+                font-size: 15px;
+                width: 300px;
+            }
+        }
+
+
+        /* Testimonial section */
+        .testimonial-border {
+            background-color: #2E4053;
+            width: 15%;
+            height: 13px;
+        }
+
+        .testimonial-title {
+            color: #2E4053;
+        }
+
+        .card-left {
+            margin-top: 30%;
+        }
+
+        /* Projects Section */
+        .btn-projects {
+            background-color: black;
+            color: #FFFFFF;
+            width: 200px;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .projects-border {
+            background-color: #2E4053;
+            width: 25%;
+            height: 13px;
+        }
+
+        .project :hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+
+
+        .projects p {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            font-size: 24px;
+            color: #2E4053;
+        }
+
+        /* Current Work */
+        .text-dark-blue {
+            color: #2E4053;
+        }
+
+        .thick-border-end {
+            border-right: 1px solid black;
+        }
