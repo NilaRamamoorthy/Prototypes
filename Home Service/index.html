@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Top Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #004d99;
+      padding: 10px 30px;
+      color: white;
+    }
+
+    .header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .header .logo span {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 30px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 30px;
+      padding: 5px 20px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      padding-left: 10px;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .header-icons div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .header-icons div:hover {
+      text-decoration: underline;
+    }
+
+    .header-icons img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 5px;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .category {
+      width: 140px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .circle {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 2px solid #004d99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 10px;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    .circle img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .category a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <img src="https://via.placeholder.com/50" alt="Logo" />
+      <span>Home Services</span>
+    </div>
+
+    <div class="search-bar">
+      🔍
+      <input type="text" placeholder="Search" />
+    </div>
+
+    <div class="header-icons">
+      <div><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"/><span>Contact</span></div>
+      <div><img src="https://img.icons8.com/ios-filled/50/ffffff/add-book.png"/><span>Book</span></div>
+      <div><img src="https://img.icons8.com/ios-filled/50/ffffff/user.png"/><span>Login</span></div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="categories">
+    <div class="category">
+      <a href="#">
+        <div class="circle"><img src="https://img.icons8.com/color/96/cleaning.png" alt="General Cleaning"></div>
+        <div>General Cleaning</div>
+      </a>
+    </div>
+    <div class="category">
+      <a href="#">
+        <div class="circle"><img src="https://img.icons8.com/color/96/air-conditioner.png" alt="AC Cleaning"></div>
+        <div>AC Cleaning</div>
+      </a>
+    </div>
+    <div class="category">
+      <a href="#">
+        <div class="circle"><img src="https://img.icons8.com/color/96/spa.png" alt="Home Salon"></div>
+        <div>Home Salon</div>
+      </a>
+    </div>
+    <div class="category">
+      <a href="#">
+        <div class="circle"><img src="https://img.icons8.com/color/96/plumber.png" alt="Handyman Services"></div>
+        <div>Handyman Services</div>
+      </a>
+    </div>
+    <div class="category">
+      <a href="#">
+        <div class="circle"><img src="https://img.icons8.com/color/96/medical-doctor.png" alt="Healthcare"></div>
+        <div>Healthcare at Home</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

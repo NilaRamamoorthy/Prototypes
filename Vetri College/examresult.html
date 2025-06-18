@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vetri College & Institutions</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="./asserts/css/header.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .main-img {
+            background: url('./asserts/images/a34251b9-8d71-49a0-a8ce-2af493705299.jpg') no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .img-container {
+            height: 80vh;
+        }
+
+        .container-1 {
+            border: 1px solid rgb(239, 238, 238);
+            box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+            padding: 0;
+        }
+
+        /* Form */
+        .form-control {
+            border-radius: 15px;
+            border: 1px solid #002b5b;
+            font-weight: bold;
+            color: #444;
+            height: 70px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .submit-btn {
+            background-color: #FFCB05;
+            color: black;
+            font-weight: bold;
+            border-radius: 15px;
+            padding: 10px 30px;
+        }
+
+        .submit-btn:hover {
+            background-color: #002b5b;
+            color: white;
+        }
+
+        .form-section {
+            max-width: 600px;
+            margin: auto;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Header Top -->
+        <div class="container-fluid py-3 px-4 bg-white">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+
+                <!-- Left: Logo + Heading + Toggler (in same line) -->
+                <div class="d-flex flex-grow-1 align-items-center">
+                    <img src="./asserts/images/Salford Class.png" alt="Vetri Logo" class="logo-img me-3">
+                    <h2 class="mb-0 fw-bold brand-name">VETRI COLLEGE & INSTITUTIONS</h2>
+
+                    <!-- Toggler appears next to heading and pushes to right on sm/md -->
+                    <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                    </button>
+                </div>
+
+                <!-- Right: Buttons only shown on md+ -->
+                <div class="top-buttons  d-flex justify-content-center gap-3 ms-3">
+                    <button class="btn d-flex align-items-center gap-2" data-bs-toggle="modal"
+                        data-bs-target="#contactModal">
+                        <i class="bi bi-headset fs-3"></i> Support
+                    </button>
+                    <button class="btn d-flex align-items-center gap-2" id="loginTriggerBtn" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        <i class="bi bi-person-fill fs-3"></i> Login
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal fade -->
+        <!-- contact Form -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #002b5b; border-radius: 20px; color: white;">
+                    <div class="modal-body text-center">
+                        <img src="./asserts/images/Salford_Class-removebg-preview.png" alt="Logo" style="width: 150px;"
+                            class="mb-3">
+                        <h4 class="fw-bold mb-4">Get in Touch</h4>
+
+                        <form id="contactForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-pill" id="name" placeholder="Name"
+                                    required>
+                                <label class="text-muted fs-5" for="name"><i
+                                        class="bi bi-person-fill me-2"></i>Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control rounded-pill" id="mobile" placeholder="Mobile"
+                                    required>
+                                <label class="text-muted fs-5" for="mobile"><i
+                                        class="bi bi-phone-fill me-2"></i>Mobile</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-pill" id="email" placeholder="Email">
+                                <label class="text-muted fs-5" for="email"><i
+                                        class="bi bi-envelope-fill me-2"></i>Email</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" id="message" placeholder="Your Message"
+                                    style="height: 100px; border-radius: 20px;" required></textarea>
+                                <label class="text-muted fs-5" for="message">Your Message</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit fw-bold px-5"
+                                style="background-color: #FFCB05;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Message Received Modal -->
+        <div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <h4 class="mb-3">Message Received</h4>
+                    <p>Thank you for getting in touch! We'll contact you soon.</p>
+                    <button class="btn btn-warning mt-3" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        <!-- Login Model -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4 rounded-4">
+                    <img src="./asserts/images/Salford Class.png" alt="Logo" style="width: 200px;" class="mx-auto mb-3">
+                    <h4 class="fw-bold">LOGIN</h4>
+
+                    <form id="loginForm" class="mt-3">
+                        <input type="email" class="form-control mb-3" style="height: 60px;" placeholder="Email"
+                            required>
+                        <input type="password" class="form-control mb-4" style="height: 60px;" placeholder="Password"
+                            required>
+
+                        <button type="submit" class="btn btn-login w-25 fw-bold" id="loginBtn"
+                            style="background-color: #FFCB05;">Login</button>
+                    </form>
+
+                    <div class="mt-5">
+                        <p class="mb-1">Forgot Password?</p>
+                        <p>New User? Create Account?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOGOUT CONFIRMATION MODAL -->
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4 rounded-4">
+                    <h5 class="modal-title mb-3 fw-bold">Are you sure you want to logout?</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="btn btn-danger" id="confirmLogoutBtn">Logout</button>
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="header-nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-around" id="navbarContent">
+                    <a href="./index.html" class="nav-link text-white"><i class="bi bi-bank nav-icon"></i> About Us</a>
+                    <a href="./admission.html" class="nav-link text-white"><i class="bi bi-mortarboard nav-icon"></i>
+                        Admission</a>
+                    <a href="./courses.html" class="nav-link text-white"><i class="bi bi-book nav-icon"></i> Courses</a>
+                    <a href="./examresult.html" class="nav-link active"><i
+                            class="bi bi-clipboard-check nav-icon mt-3"></i>
+                        Exam
+                        Result</a>
+                    <a href="./weoffer.html" class="nav-link text-white"><i class="bi bi-gear nav-icon"></i> We
+                        Offer</a>
+                    <a href="./contact.html" class="nav-link text-white"><i class="bi bi-mortarboard nav-icon mt-2"></i>
+                        Contact
+                        Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="img-container">
+        <div class="main-img">
+        </div>
+    </div>
+    <!-- Exam Result -->
+    <div class="container container-1 my-4 pb-5">
+        <h1 class="fw-bold py-3 text-center" style="color: #FFCB05; background-color: #002b5b;">EXAM RESULTS</h1>
+        <div class="container form-section">
+            <form id="resultForm">
+                <div class="mb-4">
+                    <label for="regNumber" class="form-label">Enter Your Register Number*</label>
+                    <input type="text" id="regNumber" class="form-control" placeholder="Register Number" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="form-label">Enter Your Email ID*</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+
+                <div class="mb-4">
+                    <input type="text" id="academicYear" class="form-control" placeholder="Academic Year" required>
+                </div>
+
+                <div class="mb-4">
+                    <input type="text" id="course" class="form-control" placeholder="Course" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn submit-btn fw-bold">Get Result</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Success Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <h5 class="modal-title mb-3" style="color: #002b5b;" id="successModalLabel">Message Sent</h5>
+                    <p>Your result is sent to your provided email.</p>
+                    <button type="button" class="btn btn-warning mt-2" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hall Ticket -->
+    <div class="container container-1 my-4 pb-5">
+        <h1 class="fw-bold py-3 text-center" style="color: #FFCB05; background-color: #002b5b;">HALL TICKET</h1>
+        <div class="container form-section">
+            <form id="ticketForm">
+                <div class="mb-4">
+                    <label for="regNumber" class="form-label">Enter Your Register Number*</label>
+                    <input type="text" id="regNumber" class="form-control" placeholder="Register Number" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="form-label">Enter Your Email ID*</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn submit-btn fw-bold">Get Hall Ticket</button>
+                </div>
+            </form>
+        </div>
+        <!--  Modal -->
+        <div class="modal fade" id="hallTicketModal" tabindex="-1" aria-labelledby="hallTicketModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <h5 class="modal-title mb-3 fw-bold" style="color: #002b5b;" id="hallTicketModalLabel">Hall Ticket
+                        Request Submitted</h5>
+                    <p>You will soon receive your hall ticket to your provided email address.</p>
+                    <button type="button" class="btn btn-warning mt-2" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start align-items-start">
+                <!-- Logo and Name -->
+                <div class="col-md-3 mb-4">
+                    <img src="./asserts/images/Salford_Class-removebg-preview.png" alt="Vetri College Logo"
+                        class="img-fluid mb-3" style="width: 250px;">
+                    <h5 class="fw-bold brand-name ms-3 fs-3">VETRI COLLEGE<br>& INSTITUTIONS</h5>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">QUICK LINKS</h5>
+                    <ul class="list-unstyled fs-5">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Examinations</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Our Services</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">COURSES</h5>
+                    <ul class="list-unstyled fs-5">
+                        <li>Python Fullstack</li>
+                        <li>UI UX Designing</li>
+                        <li>Data Analytics</li>
+                        <li>Java Fullstack</li>
+                        <li>Mern Stack</li>
+                        <li>Data Science</li>
+                        <li>Business Analytics</li>
+                        <li>Software Testing</li>
+                        <li>Digital Marketing</li>
+                        <li>AWS & Mobile App</li>
+                        <li>Development</li>
+                    </ul>
+                </div>
+
+                <!-- Address and Social -->
+                <div class="col-md-3 mb-4 fs-6">
+                    <h5 class="fw-bold">ADDRESS</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>21, XYZ Street, ABC Nagar,<br>Chennai - 6000xx</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+91 9123456789</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>info@vetricollegeandinstitutions.com</p>
+                    <h6 class="fw-bold mt-3">FOLLOW US ON:</h6>
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+                        <a href="#" class="text-light fs-4"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center pt-3 mt-3">
+                <p class="mb-0 fs-5 footer-foot">&copy; 2025 Vetri College & Institutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="./asserts/js/modal.js"></script>
+    <script>
+        // Result Form
+        document.getElementById('resultForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show modal
+            const modal = new bootstrap.Modal(document.getElementById('successModal'));
+            modal.show();
+
+            // Optionally reset the form
+            this.reset();
+        });
+        // Hall Ticket form
+        document.getElementById('ticketForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show modal
+            const modal = new bootstrap.Modal(document.getElementById('hallTicketModal'));
+            modal.show();
+
+            // Optional: reset form
+            this.reset();
+        });
+    </script>
+
+
+</body>
+
+</html>
